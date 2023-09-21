@@ -6,8 +6,8 @@ const TokenCard = ({ id }) => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://api.coingecko.com/api/v3/coins/${id}
-    `)
+
+    fetch(`https://api.coingecko.com/api/v3/coins/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setTokenData(data);
@@ -19,6 +19,7 @@ const TokenCard = ({ id }) => {
   if (isLoading) {
     return <div>Loading</div>;
   }
+
   return (
     <div className="token-container">
       {tokenData && (
@@ -32,17 +33,18 @@ const TokenCard = ({ id }) => {
               </span>
             </div>
           </div>
+          <div className="token-amount-container">
+            <div className="token-amount">10</div>
+            <div className="token-amount-long">
+              <div className="token-price">
+                {tokenData.market_data.current_price.usd}
+              </div>
+            </div>
+          </div>
         </>
       )}
-      <div className="token-amount-container">
-        <div className="token-amount">10</div>
-        <div className="token-amount-long">
-          <div className="token-price">
-            {tokenData.market_data.current_price.usd}
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
+
 export default TokenCard;
