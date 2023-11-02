@@ -28,14 +28,14 @@ const DevSection = () => {
               using the same wallet they used to contribute. Tokens can be
               claimed when the DEX listing goes live.
             </p>
-            <div className="btn-wrapper">
+            {/* <div className="btn-wrapper">
               <button className="primary">
                 <span>Learn More</span>
               </button>
               <button className="secondary">
                 <span>Get In Touch</span>
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="dev-section-image">
             <img src={dev} alt="dev tools" />
