@@ -25,7 +25,7 @@ const TokenCard = ({ id }) => {
       {tokenData && (
         <>
           <div className="token-info">
-            <img className="token-logo" src={tokenData.image.small} />
+            <img className="token-logo" alt="" src={tokenData.image.small} />
             <div className="token-title-container">
               <span className="token-title">{tokenData.name}</span>
               <span className="token-title-long">

@@ -12,7 +12,7 @@ const SocialMediaPromotion = () => {
         <>
           <div className="social-media-promotion-text">
             <h2>
-              <span className="highlighted">Join</span> our community
+              <span className="higlighted">Join</span> our community
             </h2>
           </div>
           <div className="social-media-promotion-icons">

@@ -3,60 +3,88 @@ import "./App.css";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import FeatureOne from "./components/FeatureOne";
-import DailyStats from "./components/DailyStats";
-import Card from "./components/Card";
-import insurance1 from "./assets/insurance1.svg";
-import wallet1 from "./assets/wallet1.svg";
-import profit1 from "./assets/profit1.svg";
-import SocialMediaPromotion from "./components/SocialMediaPromotion";
+// import DailyStats from "./components/DailyStats";
+// import Card from "./components/Card";
+// import insurance1 from "./assets/insurance1.svg";
+// import wallet1 from "./assets/wallet1.svg";
+// import profit1 from "./assets/profit1.svg";
+import Tokenomics from "./components/Tokenomics";
+// import SocialMediaPromotion from "./components/SocialMediaPromotion";
 import DevSection from "./components/DevSection";
-import { BlogSection } from "./components/BlogSection";
+// import { BlogSection } from "./components/BlogSection";
 import Footer from "./components/Footer";
+import RoadMap from "./components/RoadMap";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import FAQ from "./components/FAQ";
+import FeatureTwo from "./components/FeatureTwo";
 
 function App() {
-  const features = [
-    {
-      src: wallet1,
-      title: "Value",
-      description:
-        "Swap from your own wallet. Be your own bank. No centralized bridges or wrapping assets",
-    },
-    {
-      src: profit1,
-      title: "Yield",
-      description:
-        "Provide Liquidity and Earn Yield on your Native Assets with Impermanent Loss Protection",
-    },
-    {
-      src: insurance1,
-      title: "Insurance",
-      description: "Get Impermanent Loss Protection on your Liquidity Pools",
-    },
-    {
-      src: wallet1,
-      title: "Staking",
-      description:
-        "Earn Yield on your Native Assets with Impermanent Loss Protection",
-    },
-  ];
+  // const features = [
+  //   {
+  //     src: wallet1,
+  //     title: "Value",
+  //     description:
+  //       "Swap from your own wallet. Be your own bank. No centralized bridges or wrapping assets",
+  //   },
+  //   {
+  //     src: profit1,
+  //     title: "Yield",
+  //     description:
+  //       "Provide Liquidity and Earn Yield on your Native Assets with Impermanent Loss Protection",
+  //   },
+  //   {
+  //     src: insurance1,
+  //     title: "Insurance",
+  //     description: "Get Impermanent Loss Protection on your Liquidity Pools",
+  //   },
+  //   {
+  //     src: wallet1,
+  //     title: "Staking",
+  //     description:
+  //       "Earn Yield on your Native Assets with Impermanent Loss Protection",
+  //   },
+  // ];
   return (
     <div className="home">
-      <Header />
-      <HeroSection />
-      <DailyStats />
-      <FeatureOne />
-      <div className="features-list-container">
+      {/* <Router>
+        <Header />
+        <Routes>
+          <Route path="/" component={<HeroSection />} />
+          <Route path="/about" component={<FeatureOne />} />
+          <Route path="/about2" component={<FeatureTwo />} />
+          <Route path="/tokenomics" component={<Tokenomics />} />
+          <Route path="/how-to-buy" component={<DevSection />} />
+          <Route path="/roadmap" component={<RoadMap />} />
+        </Routes>
+      </Router> */}
+      {/* <DailyStats /> */}
+      {/* <Route path="about" element={<FeatureOne />} />
+        <Route path="about2" element={<FeatureTwo />} /> */}
+      {/* <div className="features-list-container">
         {features.map((feature, index) => {
           return (
             <Card key={index} title={feature.title} imgUrl={feature.src}>
-              <p>{feature.description}</p>
+              {<p>{feature.description}</p>}
             </Card>
           );
         })}
-      </div>
+      // </div> */}
+      {/* // <Route path="tokenomics" element={<Tokenomics />} />
+      //   <Route path="how-to-buy" element={<DevSection />} />
+
+      //   <Route path="roadmap" element={<RoadMap />} />
+      // </Routes> */}
+      {/*// </Router>*/}
+      <Header />
+      <HeroSection />
+      <FeatureOne />
+      <FeatureTwo />
+      <Tokenomics />
       <DevSection />
-      <SocialMediaPromotion />
-      <BlogSection />
+      <RoadMap />
+      <FAQ />
+      {/* <SocialMediaPromotion /> */}
+      {/* <BlogSection /> */}
       <Footer />
     </div>
   );

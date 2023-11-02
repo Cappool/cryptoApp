@@ -1,60 +1,57 @@
+// import search from "../assets/icons/search.svg";
 import React from "react";
-import search from "../assets/icons/search.svg";
-import { ReactComponent as TelegramIcon } from "../assets/icons/telegram.svg";
-import { ReactComponent as TwitterIcon } from "../assets/icons/twitter.svg";
-import { ReactComponent as YoutubeIcon } from "../assets/icons/youtube.svg";
-import { ReactComponent as DiscordIcon } from "../assets/icons/discord.svg";
-import hero from "../assets/hero.svg";
+import home from "../assets/home1.png";
+import banner from "../assets/banner.png";
+// import { ReactComponent as YouTubeIcon } from "../assets/icons/youtube.svg";
+// import { ReactComponent as DiscordIcon } from "../assets/icons/discord.svg";
+// import hero from "../assets/hero.svg";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
-    <div className="hero-section-container">
-      <div className="hero-info-wrapper">
-        <div className="hero-info-text">
-          <h1>
-            The <span className="highlighted">Decentralized</span>
-            Exchange
-          </h1>
-          <p className="hero-info-description">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </p>
-          {/* <div className="search-container">
+    <div id="#" className="hero-section-father">
+      <div className="hero-section-container">
+        <div className="hero-info-wrapper">
+          <div className="hero-info-text">
+            <h1>$dedPool</h1>
+            <p className="hero-info-description">
+              dedPool stands for Determined Efficient Decentralized crypto Pool.
+              The memes have had their time, its now the comics prime!
+            </p>
+            <div className="white-paper-section">
+              <button className="white-paper-btn">
+                <span>WHITEPAPER</span>
+              </button>
+              <img className="home-icon" src={home} alt="home-icon" />
+            </div>
+            {/* <div className="search-container">
             <div className="search-input-wrapper">
-              <img src={search} alt="" className="search" />
+              <img className="search" src={search} alt="search" />
               <input
-                type="text"
                 className="search-input"
-                placeholder="Search 5000+ tokens across 9 chains..."
-              />
+                placeholder="Search 5000+ tokens across 9 Chains..."
+              ></input>
             </div>
             <button className="search-btn primary">
               <span className="start-swapping">Start Swapping</span>
             </button>
           </div> */}
-          <div className="social-links-container">
-            <div className="social-links">
-              <a href="/">
-                <TelegramIcon />
-              </a>
-              <a href="/">
-                <TwitterIcon />
-              </a>
-              <a href="/">
-                <YoutubeIcon />
-              </a>
-              <a href="/">
-                <DiscordIcon />
-              </a>
-            </div>
+          </div>
+        </div>
+
+        {/* Web3 container */}
+        <div className="swap-token">
+          {/* <img className="hero-img" src={hero} alt="blockchain" /> */}
+          <div className="swap-token-container">
+            <label htmlFor="Enter amount">Enter amount</label>
+            <br />
+            <input type="text"></input>
           </div>
         </div>
       </div>
-      <div className="hero-image-container">
-        <img src={hero} alt="blockchain" className="hero-img" />
-      </div>
+      <p className="feature-text">As Featured On</p>
+      <img src={banner} alt="feature" className="feature-banner" />
     </div>
   );
-}
+};
 
 export default HeroSection;
