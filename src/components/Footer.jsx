@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="copyright-sub1">
               <h3>$DEDPOOL</h3>
             </div>
-            <div className="social-links-container2">
+            {/* <div className="social-links-container2">
               <div className="social-links again">
                 <a
                   className="icon"
@@ -53,7 +53,7 @@ const Footer = () => {
                   <TwitterIcon />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="copyright-statement">
             <div className="copyright">©2023 Dedpool. All rights reserved</div>

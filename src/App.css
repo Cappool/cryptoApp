@@ -813,6 +813,8 @@ p {
 
 .dev-section-description {
   font-size: 1.25rem;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
 }
 
 .dev-section-container .dev-section-list {

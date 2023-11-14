@@ -42,7 +42,7 @@ const Header = () => {
         {/* <div className="wallet-btn">
           <button className="primary">Enter App</button>
         </div> */}
-        <div className="social-links-container">
+        {/* <div className="social-links-container">
           <div className="social-links">
             <a target="_blank" rel="noreferrer" href="https://t.me/dedpoolcoin">
               <TelegramIcon />
@@ -55,7 +55,7 @@ const Header = () => {
               <TwitterIcon />
             </a>
           </div>
-        </div>
+        </div> */}
         <button className="hamburger" onClick={toggleExpanded}>
           <MenuIcon />
         </button>
@@ -79,7 +79,7 @@ const Header = () => {
               <Link to="#roadmap">ROADMAP</Link>
             </button>
           </div>
-          <div className="social-links-container2">
+          {/* <div className="social-links-container2">
             <div className="social-links">
               <a
                 target="_blank"
@@ -96,7 +96,7 @@ const Header = () => {
                 <TwitterIcon />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </>

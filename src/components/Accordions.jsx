@@ -119,7 +119,7 @@ const AccordionSection = ({
       </div>
       {isActiveSection && (
         <div className="anwser">
-          <p className="dev-section-description">{section.ans}</p>
+          <p className="dev-section-description1">{section.ans}</p>
         </div>
       )}
     </div>
