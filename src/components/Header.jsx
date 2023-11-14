@@ -23,19 +23,19 @@ const Header = () => {
         <div className="menu">
           <div className="menu-links">
             <Link to="#" smooth>
-              Home
+              HOME
             </Link>
             <Link to="#about" smooth>
-              About
+              ABOUT
             </Link>
             <Link to="#tokenomics" smooth>
-              Tokenomics
+              TOKENOMICS
             </Link>
             <Link to="#how-to-buy" smooth>
-              How To buy
+              HOW TO BUY
             </Link>
             <Link to="#roadmap" smooth>
-              RoadMap
+              ROADMAP
             </Link>
           </div>
         </div>
@@ -64,19 +64,19 @@ const Header = () => {
         <div className="menu-overlay">
           <div className="menu-links">
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#">Home</Link>
+              <Link to="#">HOME</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#about">About</Link>
+              <Link to="#about">ABOUT</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#tokenomics">Tokenomics</Link>
+              <Link to="#tokenomics">TOKENOMICS</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#how-to-buy">How To buy</Link>
+              <Link to="#how-to-buy">HOW TO BUY</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#roadmap">RoadMap</Link>
+              <Link to="#roadmap">ROADMAP</Link>
             </button>
           </div>
           <div className="social-links-container2">

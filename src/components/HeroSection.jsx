@@ -7,6 +7,8 @@ import banner from "../assets/banner.png";
 // import hero from "../assets/hero.svg";
 
 const HeroSection = () => {
+  const url =
+    "https://drive.google.com/file/d/1Pj4o__Pi9MvctcmtSWQl6La_H5ef5RbX/view?usp=sharing";
   return (
     <div id="#" className="hero-section-father">
       <div className="hero-section-container">
@@ -14,13 +16,22 @@ const HeroSection = () => {
           <div className="hero-info-text">
             <h1>$dedPool</h1>
             <p className="hero-info-description">
-              dedPool stands for Determined Efficient Decentralized crypto Pool.
-              The memes have had their time, its now the comics prime!
+              Meme was always an F-word to me. The memes have had their time,
+              its now the DEDPOOL prime!
             </p>
             <div className="white-paper-section">
-              <button className="white-paper-btn">
+              {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/1Pj4o__Pi9MvctcmtSWQl6La_H5ef5RbX/view?usp=sharing"
+              > */}
+              <button
+                className="white-paper-btn"
+                onClick={() => window.open(url, "_blank")}
+              >
                 <span>WHITEPAPER</span>
               </button>
+              {/* </a> */}
               <img className="home-icon" src={home} alt="home-icon" />
             </div>
             {/* <div className="search-container">
@@ -42,9 +53,7 @@ const HeroSection = () => {
         <div className="swap-token">
           {/* <img className="hero-img" src={hero} alt="blockchain" /> */}
           <div className="swap-token-container">
-            <label htmlFor="Enter amount">Enter amount</label>
-            <br />
-            <input type="text"></input>
+            <label htmlFor="Enter amount">Presale widget</label>
           </div>
         </div>
       </div>

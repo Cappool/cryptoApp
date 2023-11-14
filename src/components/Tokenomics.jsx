@@ -8,15 +8,15 @@ const Tokenomics = () => {
       <div className="tokenomics-container">
         <div className="feature-description token">
           <div className="feature-description-title">
-            <h1>
+            <h2>
               <span className="highlighted">TOKENOMICS</span>
-            </h1>
+            </h2>
           </div>
           <p className="feature-description-paragraph">
             Total Supply : &nbsp;100,000,000,000 <br /> <br />
             Presale (40 %) : &nbsp;40,000,000,000 <br />
             Community rewards (40 %) : &nbsp;40,000,000,000 <br />
-            DEX Liquidity (10 %) : &nbsp;40,000,000,000 <br />
+            DEX Liquidity (10 %) : &nbsp;10,000,000,000 <br />
             Burn Allocation (10 %) : &nbsp;10,000,000,000
           </p>
           {/* <div className="btn-container">

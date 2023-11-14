@@ -17,8 +17,8 @@ const FeatureOne = () => {
           </div>
           <p className="feature-description-paragraph">
             dedPool is an ERC-20 token built on the ethereum chain. The name
-            'ded Pool!' stands for Determined Efficient Decentralized crypto
-            Pool. Stake dedPool and earn rewards.
+            'DEDPOOL' stands for Determined Efficient Decentralized crypto Pool.
+            Stake $DEDPOOL and earn rewards.
           </p>
           {/* <div className="btn-container">
           <button className="secondary">
@@ -33,11 +33,11 @@ const FeatureOne = () => {
             </h2>
           </div>
           <p className="feature-description-paragraph">
-            Did you miss any Memecoin pump?You're not alone. Most of us were
+            Did you miss any Memecoin pump? You're not alone. Most of us were
             unaware of some Memecoin's early existence and only know about it
             when recent prices made news headlines. We're turning that
-            disappointment into oppurtunity. Imagine telling your coworkers
-            you're quitting because dedPool mooned?
+            disappointment into opportunity. Imagine telling your coworkers
+            you're quitting because $DEDPOOL mooned?
           </p>
         </div>
         <div className="feature-description">
@@ -50,7 +50,7 @@ const FeatureOne = () => {
           </div>
           <p className="feature-description-paragraph">
             DedPool is tired of watching other fork tokens, nor is it a
-            pump-and- dump scheme. The dedPool token is designed to provide
+            pump-and-dump scheme. The $DEDPOOL token is designed to provide
             daily rewards to stakers for many years to come
           </p>
           <div className="hero-image-container">

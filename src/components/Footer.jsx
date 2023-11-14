@@ -56,9 +56,18 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyright-statement">
-            <span className="copyright">
-              ©2023 Deadpool. All rights reserved
-            </span>
+            <div className="copyright">©2023 Dedpool. All rights reserved</div>
+
+            <div className="copyright-2">
+              {" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:contact@dedpoolcoin.com"
+              >
+                contact@dedpoolcoin.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

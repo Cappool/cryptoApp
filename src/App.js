@@ -3,18 +3,13 @@ import "./App.css";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import FeatureOne from "./components/FeatureOne";
-// import DailyStats from "./components/DailyStats";
-// import Card from "./components/Card";
-// import insurance1 from "./assets/insurance1.svg";
-// import wallet1 from "./assets/wallet1.svg";
-// import profit1 from "./assets/profit1.svg";
+
 import Tokenomics from "./components/Tokenomics";
 // import SocialMediaPromotion from "./components/SocialMediaPromotion";
 import DevSection from "./components/DevSection";
-// import { BlogSection } from "./components/BlogSection";
-import Footer from "./components/Footer";
+
 import RoadMap from "./components/RoadMap";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import FAQ from "./components/FAQ";
 import FeatureTwo from "./components/FeatureTwo";
 
@@ -85,7 +80,6 @@ function App() {
       <FAQ />
       {/* <SocialMediaPromotion /> */}
       {/* <BlogSection /> */}
-      <Footer />
     </div>
   );
 }

@@ -6,20 +6,20 @@ const DevSection = () => {
     <div id="how-to-buy" className="dev-section-container">
       <div className="dev-section-list">
         <h1 className="dev-section-title">
-          How To <span className="highlighted">Buy</span>
+          <span className="highlighted">PURCHASE DEDPOOL IN PRESALE</span>
         </h1>
         <div className="dev-section-wrapper">
           <div className="dev-section-text">
             <h2>Send ETH or USDT to your wallet</h2>
             <p className="dev-section-description">
-              You can swap for DEDPOOL tokens using ETH, BNB, or USDT. Ensure
+              You can swap for $DEDPOOL tokens using ETH, BNB, or USDT. Ensure
               you have sufficient amounts of these tokens in your wallet to
               proceed.
             </p>
             <h2>Connect wallet and swap</h2>
             <p className="dev-section-description">
               Connect your wallet to the site and easily swap ETH, BNB or USDT
-              for DEDPOOL using the buy widget above. There is no buy tax for
+              for $DEDPOOL using the buy widget above. There is no buy tax for
               presale transactions.
             </p>
             <h2>Claim tokens on listing day</h2>

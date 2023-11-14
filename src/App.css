@@ -107,7 +107,7 @@ a {
 }
 
 .menu .menu-links a {
-  margin: 0 12px;
+  margin: 0 25px;
   color: #ffff;
   text-decoration: none;
 }
@@ -228,9 +228,9 @@ span.highlighted {
 }
 
 .home-icon {
-  margin: 0 20%;
-  height: 200px;
-  width: 200px;
+  margin: 0 5%;
+  height: 250px;
+  width: 250px;
 }
 
 .swap-token {
@@ -604,6 +604,12 @@ p {
   justify-content: start;
 }
 
+@media only screen and (max-width: 1200px) {
+  .token {
+    height: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .token {
     font-size: 1.2rem;
@@ -622,12 +628,13 @@ p {
 .feature-container .feature-description .feature-description-title {
   color: #fff;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .feature-description-paragraph {
   line-height: 40px;
   margin: 0;
+  height: 90%;
   font-size: 1.25rem;
 }
 
@@ -768,6 +775,9 @@ p {
   margin: 30px 0;
 }
 
+.dev-section-container .dev-section-list .dev-section-title {
+  font-size: 30px;
+}
 .social-media-promotion-container .card-container {
   width: 100%;
   display: flex;
@@ -951,6 +961,16 @@ p {
   border-bottom: 1px solid white;
 }
 
+.footer-row .terms-section h3 {
+  margin: 0;
+}
+
+.terms-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 768px) {
   .footer-row {
     display: flex;
@@ -958,8 +978,15 @@ p {
     flex-direction: column;
   }
 
+  .footer-row .terms-section h3 {
+    margin: 20px 0;
+  }
   .copyright-sub1 {
     font-size: 1.25rem;
+  }
+
+  .copyright {
+    margin: 10px 0;
   }
 
   .icon {
@@ -969,7 +996,9 @@ p {
 
 .copyrights-section {
   display: flex;
+
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .copyright-sub {
@@ -979,10 +1008,17 @@ p {
 
 .copyright-sub1 {
   margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.copyright-sub1 h3 {
+  font-family: roqueFont;
+  font-weight: 100;
 }
 
 .copyright-statement {
   margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 .disclaimer-section {
   padding: 20px 0;
@@ -1015,6 +1051,9 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 2em;
   margin: 100px auto;
+}
+.tokenomics-container .feature-description-title {
+  font-size: 20px;
 }
 
 .tokenomics-container .daily-stats-container {
