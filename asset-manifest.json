@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.95b83e60.css",
-    "main.js": "/static/js/main.977b87e1.js",
+    "main.css": "/static/css/main.b835dc79.css",
+    "main.js": "/static/js/main.7323a8a0.js",
     "static/js/787.91095627.chunk.js": "/static/js/787.91095627.chunk.js",
     "static/media/1.png": "/static/media/1.75d254e9b9df0268bd18.png",
     "static/media/tokenomics2.png": "/static/media/tokenomics2.5973b8c4a47dcb940d7e.png",
@@ -22,12 +22,12 @@
     "index.html": "/index.html",
     "static/media/menu.svg": "/static/media/menu.3c6d26e95d49a925eac3ab47f232f842.svg",
     "static/media/telegram.svg": "/static/media/telegram.4907a7c8baadc09079742f3582dd478c.svg",
-    "main.95b83e60.css.map": "/static/css/main.95b83e60.css.map",
-    "main.977b87e1.js.map": "/static/js/main.977b87e1.js.map",
+    "main.b835dc79.css.map": "/static/css/main.b835dc79.css.map",
+    "main.7323a8a0.js.map": "/static/js/main.7323a8a0.js.map",
     "787.91095627.chunk.js.map": "/static/js/787.91095627.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95b83e60.css",
-    "static/js/main.977b87e1.js"
+    "static/css/main.b835dc79.css",
+    "static/js/main.7323a8a0.js"
   ]
 }
