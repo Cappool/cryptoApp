@@ -8,7 +8,7 @@ import banner from "../assets/banner.png";
 
 const HeroSection = () => {
   const url =
-    "https://drive.google.com/file/d/1Pj4o__Pi9MvctcmtSWQl6La_H5ef5RbX/view?usp=sharing";
+    "https://drive.google.com/file/d/1xctvrLsSZu2Qz4C6--EBS19dF979CQUz/view?usp=sharing";
   return (
     <div id="#" className="hero-section-father">
       <div className="hero-section-container">
