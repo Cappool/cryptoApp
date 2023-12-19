@@ -7,25 +7,13 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-row">
         <div className="terms-section">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://drive.google.com/file/d/1fovtAhi7ghNMWU0nKwS73Xtk_zM43lQG/view?usp=sharing"
-          >
+          <a target="_blank" rel="noreferrer" href="javascript:;">
             <h3>Terms Of Service</h3>
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://drive.google.com/file/d/1gqfegNrrInGUC7WNi8gnZ7buVDUKGU-r/view?usp=sharing"
-          >
+          <a target="_blank" rel="noreferrer" href="javascript:;">
             <h3>Privacy policy</h3>
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://drive.google.com/file/d/1gqfegNrrInGUC7WNi8gnZ7buVDUKGU-r/view?usp=sharing"
-          >
+          <a target="_blank" rel="noreferrer" href="javascript:;">
             <h3>Cookies</h3>
           </a>
         </div>

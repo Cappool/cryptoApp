@@ -15,8 +15,8 @@ const Tokenomics = () => {
           <p className="feature-description-paragraph">
             Total Supply : &nbsp;100,000,000,000 <br /> <br />
             Presale (40 %) : &nbsp;40,000,000,000 <br />
-            Community rewards (30 %) : &nbsp;30,000,000,000 <br />
-            Burn Allocation (20 %) : &nbsp;20,000,000,000 <br />
+            Community rewards (40 %) : &nbsp;40,000,000,000 <br />
+            Burn Allocation (10 %) : &nbsp;10,000,000,000 <br />
             DEX Liquidity (10 %) : &nbsp;10,000,000,000
           </p>
           {/* <div className="btn-container">
