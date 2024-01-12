@@ -2,6 +2,7 @@
 import React from "react";
 import home from "../assets/home1.png";
 import banner from "../assets/banner.png";
+import Presale from "./Presale";
 // import { ReactComponent as YouTubeIcon } from "../assets/icons/youtube.svg";
 // import { ReactComponent as DiscordIcon } from "../assets/icons/discord.svg";
 // import hero from "../assets/hero.svg";
@@ -48,7 +49,7 @@ const HeroSection = () => {
         <div className="swap-token">
           {/* <img className="hero-img" src={hero} alt="blockchain" /> */}
           <div className="swap-token-container">
-            <label htmlFor="Enter amount">Presale widget</label>
+            <Presale />
           </div>
         </div>
       </div>
