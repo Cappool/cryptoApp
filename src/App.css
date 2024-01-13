@@ -1291,13 +1291,23 @@ progress[value]::-moz-progress-bar {
   background-color: #da0000;
 }
 
-.input1,
-.input2 {
+.connect-wallet-btn {
+  width: 100%;
+}
+
+/* Todo */
+
+.input1::-webkit-inner-spin-button,
+.input1::-webkit-outer-spin-button,
+.input2::-webkit-inner-spin-button,
+.input2::-webkit-outer-spin-button {
   border-radius: 100px;
   padding: 0.5rem 1rem;
   background-color: #1d1b1b;
   border: #1d1b1b;
   color: white;
+  /* -webkit-appearance: none;
+  appearance: none; */
 }
 
 /* .btn:not([disabled]):hover {
@@ -1308,10 +1318,27 @@ progress[value]::-moz-progress-bar {
   cursor: not-allowed;
 }
 
+.connect-wallet-btn:not([disabled]):hover {
+  border: 1px solid white;
+}
+
 .btn-div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wallet-btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.wallet-btn-icon {
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .input_div {
@@ -1405,6 +1432,12 @@ progress[value]::-moz-progress-bar {
     line-height: normal;
     font-size: 20px;
   }
+}
+
+.wallet-btn-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .close-btn {

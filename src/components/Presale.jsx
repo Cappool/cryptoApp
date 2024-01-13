@@ -10,10 +10,14 @@ const Presale = () => {
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
   const [showConnectModal, setShowConnectModal] = useState(false);
+  const [input1value, setInput1Value] = useState(0);
+  const [input2value, setInput2Value] = useState(0);
 
   const handleBtnAndInput = function (coin_val, img_path) {
     setCoin(coin_val);
     setImage(img_path);
+    setInput1Value(0);
+    setInput2Value(0);
   };
 
   const handleOpenModal1 = () => setShowModal1(true);
@@ -23,8 +27,32 @@ const Presale = () => {
   const handleCloseModal2 = () => setShowModal2(false);
 
   const handleOpenConnectModal = () => setShowConnectModal(true);
-
   const handleCloseConnectModal = () => setShowConnectModal(false);
+
+  function setInput1fn(coin, e) {
+    const val = e.target.value;
+    let res = 0;
+    setInput1Value(val);
+    if (coin === "BNB") {
+      res = val * 1000;
+    } else {
+      res = val * 2000;
+    }
+    setInput2Value(res);
+  }
+
+  function setInput2fn(coin, e) {
+    const val = e.target.value;
+    let res = 0;
+    setInput2Value(val);
+    if (coin === "BNB") {
+      res = val / 1000;
+    } else {
+      res = val / 2000;
+    }
+    setInput1Value(res);
+  }
+
   return (
     <div className="presale">
       <div className="progress-container">
@@ -75,14 +103,30 @@ const Presale = () => {
         <div className="coin-input">
           <label>{coin} you pay</label>
           <div className="input_div">
-            <input className="input1" placeholder="0" />
+            <input
+              className="input1"
+              type="number"
+              value={input1value}
+              onChange={(e) => {
+                setInput1fn(coin, e);
+              }}
+              style={{ "-moz-appearance": "textfield" }}
+            />
             <img src={image} alt="bnb" className="presale-coin-image" />
           </div>
         </div>
         <div className="ded-input">
           <label>DED you receive</label>
           <div className="input_div">
-            <input className="input2" placeholder="0" />
+            <input
+              className="input2"
+              type="number"
+              value={input2value}
+              onChange={(e) => {
+                setInput2fn(coin, e);
+              }}
+              style={{ "-moz-appearance": "textfield" }}
+            />
             <img src={ded} alt="ded" className="presale-coin-image" />
           </div>
         </div>

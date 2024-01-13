@@ -2,10 +2,16 @@ import React from "react";
 import info from "../assets/icons/info.svg";
 
 export default function Modal({ showModal, handlefn, children }) {
+  const handleOutsideClick = (event) => {
+    // Check if the click is outside the modal
+    if (event.target === event.currentTarget) {
+      handlefn();
+    }
+  };
   return (
     <div>
       {showModal && (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={handleOutsideClick}>
           <div className="modal">
             <span className="close-btn" onClick={handlefn}>
               &times;
@@ -15,6 +21,9 @@ export default function Modal({ showModal, handlefn, children }) {
             <div className="modal_description">
               <p>{children}</p>
             </div>
+            <button className="btn" onClick={handlefn}>
+              Close
+            </button>
           </div>
         </div>
       )}
