@@ -81,7 +81,7 @@ const Presale = () => {
       {/* <div className="presale-exchange-section"> */}
       <div className="presale-buttons">
         <button
-          className={`btn ${coin === "BNB" ? "btn-selected" : ""}`}
+          className={`btn curved ${coin === "BNB" ? "btn-selected" : ""}`}
           onClick={() => handleBtnAndInput("BNB", bnb)}
         >
           <div className="btn-div">
@@ -90,10 +90,10 @@ const Presale = () => {
           </div>
         </button>
         <button
-          className={`btn ${coin === "USDT" ? "btn-selected" : ""}`}
+          className={`btn  curved ${coin === "USDT" ? "btn-selected" : ""}`}
           onClick={() => handleBtnAndInput("USDT", usdt)}
         >
-          <div className="btn-div">
+          <div className="btn-div curved">
             <img src={usdt} alt="usdt" className="presale-btn-image" />
             USDT
           </div>
@@ -110,7 +110,6 @@ const Presale = () => {
               onChange={(e) => {
                 setInput1fn(coin, e);
               }}
-              style={{ "-moz-appearance": "textfield" }}
             />
             <img src={image} alt="bnb" className="presale-coin-image" />
           </div>
@@ -125,7 +124,6 @@ const Presale = () => {
               onChange={(e) => {
                 setInput2fn(coin, e);
               }}
-              style={{ "-moz-appearance": "textfield" }}
             />
             <img src={ded} alt="ded" className="presale-coin-image" />
           </div>
@@ -134,21 +132,22 @@ const Presale = () => {
       <button className="btn btn-connect" onClick={handleOpenConnectModal}>
         Connect wallet
       </button>
-      <Modal showModal={showModal1} handlefn={handleCloseModal1}>
-        Your total purchased tokens are all tokens purchased using the connected
-        wallet. This includes all staked and unstaked tokens.
-      </Modal>
-      <Modal showModal={showModal2} handlefn={handleCloseModal2}>
-        Unclaimed $GBTC that was bought using ETH or ERC-20 USDT can be staked
-        now. Please note that all early staked tokens can be withdrawn 7 days
-        after token claiming goes live, which will happen after the presale has
-        concluded.
-      </Modal>
+      {showModal1 && (
+        <Modal handlefn={handleCloseModal1}>
+          Your total purchased tokens are all tokens purchased using the
+          connected wallet. This includes all staked and unstaked tokens.
+        </Modal>
+      )}
+      {showModal2 && (
+        <Modal handlefn={handleCloseModal2}>
+          Unclaimed $GBTC that was bought using ETH or ERC-20 USDT can be staked
+          now. Please note that all early staked tokens can be withdrawn 7 days
+          after token claiming goes live, which will happen after the presale
+          has concluded.
+        </Modal>
+      )}
 
-      <ConnectModal
-        showConnectModal={showConnectModal}
-        handlefn={handleCloseConnectModal}
-      />
+      {showConnectModal && <ConnectModal handlefn={handleCloseConnectModal} />}
     </div>
 
     // </div>

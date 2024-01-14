@@ -1202,7 +1202,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* width: 100%; */
+    width: 100%;
     margin-bottom: 15px;
 
     .coin-input,
@@ -1273,15 +1273,12 @@ progress[value]::-moz-progress-bar {
   font-family: inherit;
   color: inherit;
   font-size: 1.25rem;
-  /* border: 2px solid #5b1112; */
   background-color: #2a3338;
   padding: 0.5rem 2rem;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 5px;
   transition: 0.3s;
   margin: 5px;
-
-  /* text-align: center; */
 }
 
 .btn-selected {
@@ -1289,25 +1286,32 @@ progress[value]::-moz-progress-bar {
 }
 .btn-connect {
   background-color: #da0000;
+  font-size: 1rem;
+  width: 50%;
+  margin: 0 25%;
 }
 
 .connect-wallet-btn {
   width: 100%;
 }
 
-/* Todo */
+.input1,
+.input2 {
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 80%;
+  background-color: #1d1b1b;
+  border: #1d1b1b;
+  color: white;
+}
 
 .input1::-webkit-inner-spin-button,
 .input1::-webkit-outer-spin-button,
 .input2::-webkit-inner-spin-button,
 .input2::-webkit-outer-spin-button {
-  border-radius: 100px;
-  padding: 0.5rem 1rem;
-  background-color: #1d1b1b;
-  border: #1d1b1b;
-  color: white;
-  /* -webkit-appearance: none;
-  appearance: none; */
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* .btn:not([disabled]):hover {
@@ -1327,7 +1331,9 @@ progress[value]::-moz-progress-bar {
   align-items: center;
   justify-content: center;
 }
-
+.curved {
+  border-radius: 100px;
+}
 .wallet-btn-div {
   display: flex;
   align-items: center;
@@ -1384,13 +1390,21 @@ progress[value]::-moz-progress-bar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 0 20px;
     margin-bottom: 0;
   }
 
   .ded-input,
   .coin-input {
     margin: 10px 0;
+    width: 90%;
+    label {
+      margin-bottom: 10px;
+    }
+  }
+
+  .input1,
+  .input2 {
+    height: 100%;
   }
 
   .presale-coin-image {
@@ -1398,6 +1412,7 @@ progress[value]::-moz-progress-bar {
     top: 5px;
   }
 }
+
 /* MODAL */
 .modal-overlay {
   position: fixed;
