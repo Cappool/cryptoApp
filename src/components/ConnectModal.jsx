@@ -16,6 +16,9 @@ export default function ConnectModal({ handlefn }) {
             <WalletButton image={metamask}>Metamask</WalletButton>
             <WalletButton image={wallet_connect}>Wallet Connect</WalletButton>
           </div>
+          <button className="btn close" onClick={handlefn}>
+            Close
+          </button>
         </div>
       </div>
     </div>

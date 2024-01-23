@@ -20,7 +20,7 @@ export default function Modal({ handlefn, children }) {
           <div className="modal_description">
             <p>{children}</p>
           </div>
-          <button className="btn" onClick={handlefn}>
+          <button className="btn close" onClick={handlefn}>
             Close
           </button>
         </div>

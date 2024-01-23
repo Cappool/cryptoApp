@@ -4,6 +4,7 @@ import usdt from "../assets/icons/usdt.png";
 import ded from "../assets/icons/ded.png";
 import Modal from "./Modal.jsx";
 import ConnectModal from "./ConnectModal.jsx";
+import Countdown from "./Countdown.jsx";
 const Presale = () => {
   const [coin, setCoin] = useState("BNB");
   const [image, setImage] = useState(usdt);
@@ -55,6 +56,15 @@ const Presale = () => {
 
   return (
     <div className="presale">
+      <div className="timer">
+        <div>Time left for next increase</div>
+        <div className="time-left-container">
+          <Countdown timeUnit="Days" timeNumber={5} />
+          <Countdown timeUnit="Hours" timeNumber={20} />
+          <Countdown timeUnit="Minutes" timeNumber={13} />
+          <Countdown timeUnit="Seconds" timeNumber={50} />
+        </div>
+      </div>
       <div className="progress-container">
         <progress className="progress" value="70" max="100" />
         <div className="progress-text">until next increase</div>
@@ -140,10 +150,10 @@ const Presale = () => {
       )}
       {showModal2 && (
         <Modal handlefn={handleCloseModal2}>
-          Unclaimed $GBTC that was bought using ETH or ERC-20 USDT can be staked
-          now. Please note that all early staked tokens can be withdrawn 7 days
-          after token claiming goes live, which will happen after the presale
-          has concluded.
+          Unclaimed $DED that was bought using BNB or USDT can be staked now.
+          Please note that all early staked tokens can be withdrawn 7 days after
+          token claiming goes live, which will happen after the presale has
+          concluded.
         </Modal>
       )}
 
