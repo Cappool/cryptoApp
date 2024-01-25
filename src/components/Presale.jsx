@@ -57,7 +57,7 @@ const Presale = () => {
   return (
     <div className="presale">
       <div className="timer">
-        <div>Time left for next increase</div>
+        <div className="timer-description">Time left for next increase</div>
         <div className="time-left-container">
           <Countdown timeUnit="Days" timeNumber={5} />
           <Countdown timeUnit="Hours" timeNumber={20} />
