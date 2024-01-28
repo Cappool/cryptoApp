@@ -12,6 +12,7 @@ import RoadMap from "./components/RoadMap";
 
 import FAQ from "./components/FAQ";
 import FeatureTwo from "./components/FeatureTwo";
+// import { Scrollbars } from "react-custom-scrollbars-2";
 
 function App() {
   // const features = [
@@ -71,13 +72,17 @@ function App() {
       // </Routes> */}
       {/*// </Router>*/}
       <Header />
-      <HeroSection />
-      <FeatureOne />
-      <FeatureTwo />
-      <Tokenomics />
-      <DevSection />
-      <RoadMap />
-      <FAQ />
+      {/* <Scrollbars autoHeight> */}
+      <div className="scroll">
+        <HeroSection />
+        <FeatureOne />
+        <FeatureTwo />
+        <Tokenomics />
+        <DevSection />
+        <RoadMap />
+        <FAQ />
+      </div>
+      {/* </Scrollbars> */}
       {/* <SocialMediaPromotion /> */}
       {/* <BlogSection /> */}
     </div>

@@ -4,7 +4,9 @@ import usdt from "../assets/icons/usdt.png";
 import ded from "../assets/icons/ded.png";
 import Modal from "./Modal.jsx";
 import ConnectModal from "./ConnectModal.jsx";
-import Countdown from "./Countdown.jsx";
+import Timer from "./Timer.jsx";
+
+const TARGET_TIMESTAMP = 1706659208;
 const Presale = () => {
   const [coin, setCoin] = useState("BNB");
   const [image, setImage] = useState(usdt);
@@ -58,12 +60,7 @@ const Presale = () => {
     <div className="presale">
       <div className="timer">
         <div className="timer-description">Time left for next increase</div>
-        <div className="time-left-container">
-          <Countdown timeUnit="Days" timeNumber={5} />
-          <Countdown timeUnit="Hours" timeNumber={20} />
-          <Countdown timeUnit="Minutes" timeNumber={13} />
-          <Countdown timeUnit="Seconds" timeNumber={50} />
-        </div>
+        <Timer targetTimestamp={TARGET_TIMESTAMP} />
       </div>
       <div className="progress-container">
         <progress className="progress" value="70" max="100" />

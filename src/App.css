@@ -40,6 +40,7 @@ a {
   background-color: black;
   padding: 5px 0 0 0;
   height: 50px;
+  z-index: 1;
 }
 
 .header-container .menu {
@@ -72,7 +73,8 @@ a {
   }
 
   .menu-overlay {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 78px;
     left: 0;
     width: 100%;
@@ -88,6 +90,9 @@ a {
     justify-content: center;
     text-align: center;
     align-items: center;
+  }
+  .link-button {
+    font-size: 2rem;
   }
 }
 
@@ -265,6 +270,7 @@ span.highlighted {
 
   .hero-section-container .hero-info-wrapper {
     width: 90%;
+    padding-top: 4rem;
   }
 
   .hero-section-container .hero-info-wrapper .hero-info-text h1 {
@@ -311,7 +317,11 @@ span.highlighted {
     font-size: small;
   }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .hero-info-wrapper {
+    padding-top: 5rem;
+  }
+}
 .hero-section-container .hero-info-container {
   height: 80%;
   display: flex;
@@ -1216,6 +1226,15 @@ p {
   }
 }
 
+.presale-coin-image {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  /* top:10px; */
+}
+
 @media only screen and (max-width: 900px) {
   .presale {
     height: 500px;
@@ -1223,13 +1242,19 @@ p {
 
   .presale-coin-image {
     right: 5px;
-    top: 3px;
+    top: 5px;
     width: 20px;
     height: 20px;
   }
 
   .timer-description {
     margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .presale-coin-image {
+    right: 5px;
+    top: 5px;
   }
 }
 
@@ -1253,11 +1278,6 @@ p {
   .input1,
   .input2 {
     height: 100%;
-  }
-
-  .presale-coin-image {
-    right: 5px;
-    top: 5px;
   }
 }
 
@@ -1407,15 +1427,6 @@ progress[value]::-moz-progress-bar {
   margin-right: 8px;
 }
 
-.presale-coin-image {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  right: 7px;
-  top: 12px;
-  /* top:10px; */
-}
-
 .info-button {
   background: transparent;
   color: white;
@@ -1531,4 +1542,25 @@ progress[value]::-moz-progress-bar {
   .time-unit {
     margin-bottom: 0;
   }
+}
+
+/* Scrollbar modification */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #5b1112;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #b71d1d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #da0000;
 }
