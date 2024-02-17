@@ -828,6 +828,16 @@ p {
   background-size: cover;
 }
 
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.open {
+  max-height: 500px;
+}
+
 .dev-section-description {
   font-size: 1.25rem;
   padding: 20px 0;
@@ -1142,6 +1152,7 @@ p {
 
 .faq-child1 {
   display: flex;
+  padding-right: 4rem;
   flex-direction: column;
   justify-content: space-evenly;
   border-right: 2px solid white;
