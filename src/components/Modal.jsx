@@ -12,16 +12,16 @@ export default function Modal({ handlefn, children }) {
     <div>
       <div className="modal-overlay" onClick={handleOutsideClick}>
         <div className="modal">
-          <span className="close-btn" onClick={handlefn}>
+          {/* <span className="close-btn" onClick={handlefn}>
             &times;
-          </span>
+          </span> */}
           <img src={info} className="info-img" alt="icon" />
           {/* <h2>Your Modal Title</h2> */}
           <div className="modal_description">
             <p>{children}</p>
           </div>
           <button className="btn close" onClick={handlefn}>
-            Close
+            OK
           </button>
         </div>
       </div>

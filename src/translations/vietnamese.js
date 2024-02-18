@@ -1,0 +1,128 @@
+const vi = {
+  translation: {
+    header: {
+      home: "trang chủ",
+      about: "về chúng tôi",
+      tokenomics: "tokenomics",
+      how_to_buy: "cách mua",
+      roadmap: "lộ trình",
+      staking: "đặt cược",
+    },
+    home: {
+      description:
+        "crypto không phải là một từ 'f'... có một cái dành cho bạn... chỉ cần tiếp tục tìm kiếm!",
+      // caption:
+      //   "Việc bỏ $2 vào một con chó Nhật Bản có thể đã biến bạn từ một nhà đầu tư hai đô la thành một triệu phú sủa. Chúng ta đã bỏ lỡ con thuyền tiền điện tử của chó, phải không?",
+      caption:
+        " Bạn không cần phải là một siêu anh hùng để có được tiền điện tử,",
+      caption1: "Tiền điện tử phù hợp sẽ làm cho bạn trở thành anh hùng ",
+      whitepaper: "Sách trắng",
+      featuredIn: "NỔI BẬT TRONG",
+    },
+    about: {
+      q1: "DỰ ÁN DEDPOOL LÀ GÌ?",
+      q2: "MỘT CƠ HỘI ĐỂ MUA MỘT TOKEN MÀ TẤT CẢ CHÚNG TA ĐỀU YÊU THÍCH VÀ TỰ HÀO!",
+      q3: "KIẾM THU NHẬP PASSIVE BẰNG CÁCH ĐẶT CƯỚC",
+      q4: "ĐẶT CƯỚC ĐỂ KIẾM",
+      q5: "ĐỐT CHÁY HỦY DIỆT",
+      a1: "DedPool là một token BEP-20 được xây dựng trên BNB Smart Chain. Tên 'DEDPOOL' viết tắt của Determined Efficient Decentralized crypto Pool. Đặt cược $DEDPOOL và kiếm thưởng.",
+      a2: "Bạn có bỏ lỡ bất kỳ đợt tăng giá nào của Memecoin không? Bạn không phải là người duy nhất. Hầu hết chúng ta không nhận biết được sự tồn tại sớm của một số loại memecoin và chỉ biết về nó khi giá gần đây trở thành tiêu điểm của tin tức. Rơi $2 vào một chú chó Nhật có thể biến bạn từ một nhà đầu tư chỉ có $2 thành triệu phú sủa. Bạn đã bỏ lỡ chiếc du thuyền tiền điện tử chó Nhật, đúng không? Chúng tôi đang biến thất vọng đó thành cơ hội. Hãy tưởng tượng nói với đồng nghiệp của bạn rằng bạn đang nghỉ việc vì $DEDPOOL tăng giá lên mặt trăng?",
+      a3: "DedPool đã quá chán ngấy khi xem các token fork khác, cũng như không phải là một kế hoạch bơi và đổ. Token $DEDPOOL được thiết kế để cung cấp phần thưởng hàng ngày cho những người đặt cược trong nhiều năm tới.",
+      a4: "• DedPool sẽ cung cấp phần thưởng passsive cho tất cả những người giữ token $DEDPOOL và đặt cược vào hợp đồng thông minh của chúng tôi.",
+      a42: "• 35% tổng nguồn cung token sẽ được trả cho những người tham gia trong hồ đặt cược dưới dạng phần thưởng.",
+      a43: "• Bất kỳ ai giữ $DEDPOOL đều có thể đặt cược token của họ để kiếm thu nhập passsive với phần thưởng dựa trên tỷ lệ phần trăm của bạn trong tổng hồ đặt cược.",
+      a5: "$DEDPOOL được cấu trúc như một token hủy diệt, tích hợp mô hình mua và đốt cháy. Với mỗi giao dịch mua và bán, 0,1% được gửi đến địa chỉ đốt cháy. Ngoài ra, 15% tổng nguồn cung được dành cho việc đốt cháy. Những chiến lược này nhằm mục đích giảm nguồn cung token theo thời gian, tăng tính khan hiếm.",
+    },
+    tokenomics: {
+      title: "TOKENOMICS",
+      total_supply: "Tổng Cung",
+      presale: "Đợt bán trước",
+      staking: "Thưởng Đặt cược",
+      burn: "Phân bổ Đốt cháy",
+      liquidity: "Thanh khoản DEX",
+    },
+    how_to_buy: {
+      title: "MUA $DEDPOOL TRONG ĐỢT BÁN TRƯỚC",
+      a1: "Gửi BNB hoặc USDT vào ví của bạn",
+      b1: "Bạn có thể đổi $DEDPOOL bằng BNB hoặc USDT. Đảm bảo bạn có đủ lượng token này trong ví của mình để tiếp tục.",
+      a2: "Kết nối ví và đổi token",
+      b2: "Kết nối ví của bạn với trang web và dễ dàng đổi BNB hoặc USDT để có $DEDPOOL bằng cách sử dụng tiện ích mua ở trên. Không có thuế mua cho các giao dịch đợt bán trước.",
+      a3: "Yêu cầu token vào ngày niêm yết",
+      b3: "Tất cả những người tham gia đợt bán trước có thể yêu cầu token của họ từ trang web này bằng cách sử dụng cùng một ví mà họ đã sử dụng để đóng góp. Token có thể được yêu cầu khi niêm yết trên DEX.",
+    },
+    roadmap: {
+      title: "LỘ TRÌNH",
+      r1: "Đợt Bán Trước và Phân Bổ Token",
+      r2: "Bước khởi đầu của DedPool được dành để tạo ra sự nhận thức về đề xuất độc đáo của mình trong thế giới crypto động. Bằng cách cung cấp cơ hội mới cho người mới, DedPool đang tìm cách phân biệt mình với các dự án crypto khác. Giai đoạn này sẽ liên quan đến một sự kiện đợt bán trước minh bạch, đặt nền tảng cho một cộng đồng cam kết và tận tâm.",
+      r3: "Xây Dựng Thương Hiệu và Tiếp Thị Trước Niêm Yết",
+      r4: "Ngay trước khi ra mắt chính thức, trọng tâm chính sẽ là các chiến dịch tiếp thị toàn diện. Mục tiêu là nhấn mạnh việc mua token $DEDPOOL là dễ dàng và có sẵn. Chiến lược tiếp thị này không chỉ giới thiệu DedPool mà còn nhấn mạnh đề xuất duy nhất của nó, mang đến một cơ hội ĐẦU TIÊN hiếm có trên thị trường đang phát triển.",
+      r5: "Ra Mắt và Khởi Đầu Đốt Cháy",
+      r6: "Ra mắt token $DEDPOOL trên các sàn DEX nổi tiếng, đảm bảo thanh khoản phong phú và giao dịch mượt mà. Giao dịch một cách dễ dàng! Chuẩn bị cho cuộc cách mạng DedPool phổ quát. $DEDPOOL được cấu trúc như một token hủy diệt, tích hợp mô hình mua và đốt cháy. Với mỗi giao dịch mua và bán, 0,1% được gửi đến địa chỉ đốt cháy. Ngoài ra, 15% tổng nguồn cung được dành cho việc đốt cháy. Những chiến lược này nhằm mục đích giảm nguồn cung token theo thời gian, tăng tính khan hiếm.",
+      r7: "Tương Tác Cộng Đồng Sau Khi Ra Mắt",
+      r8: "Hành trình DedPool sau khi ra mắt xoay quanh việc nuôi dưỡng và mở rộng cộng đồng của mình. Dự án tin tưởng trong việc khuyến khích sự tương tác tích cực và sẽ triển khai các sáng kiến để khuyến khích sự tham gia của cộng đồng. Bằng cách làm như vậy, DedPool khao khát tạo ra một sự quan tâm sâu sắc trong các thành viên, đảm bảo rằng họ được công nhận và được thưởng cho sự trung thành và đóng góp của họ.",
+    },
+    staking: {
+      title: "CHÀO MỪNG BẠN ĐẾN VỚI STAKING $DEDPOOL",
+      description:
+        "Staking $DEDPOOL sẽ được triển khai trong những ngày sắp tới, cho phép bạn kiếm lợi nhuận. Lợi nhuận của bạn sẽ được xác định bởi phần trăm cổ phần của bạn trong hồ staking $DEDPOOL và tỷ suất lợi nhuận hàng năm. Hãy theo dõi để cập nhật thông tin chi tiết.",
+      s1: "SỐ DƯ ĐÃ STAKED",
+      s2: "SỐ LƯỢNG CÓ THỂ STAKE CỦA BẠN",
+      s3: "APY",
+      s4: "TỔNG SỐ DƯ ĐÃ STAKED",
+      s5: "TỔNG LỢI NHUẬN",
+      b1: "Rút Token đã Staked",
+      b2: "Thêm vào Staking",
+      b3: "Nhận Lợi Nhuận",
+    },
+    faq: {
+      title: "CÂU HỎI THƯỜNG GẶP",
+      q1: "DEDPOOL là gì?",
+      a1: "DedPool là một token BEP-20 được xây dựng trên BNB Smart Chain theo xu hướng thị trường tiền điện tử mới nhất, mang lại cơ hội thứ hai cho những người đã bỏ lỡ các token kế thừa thành công. Tên 'DEDPOOL' đại diện cho Determined Efficient Decentralized crypto Pool.",
+      q2: "Tại sao lại ra mắt trên BNB Smart Chain?",
+      a2: "BNB Smart Chain, được hỗ trợ bởi sàn giao dịch lớn nhất thế giới, Binance, có mạng lưới rộng lớn và sự hỗ trợ của cộng đồng. Mục tiêu của chúng tôi là phục vụ cộng đồng này bằng cách giới thiệu một token mới mang lại giá trị cho cuộc sống hàng ngày của họ. Xem xét việc phí gas thấp hơn trên BSC, chúng tôi muốn đảm bảo rằng các nhà đầu tư của chúng tôi phân bổ số lượng lớn vốn của họ để mua token thay vì chi trả số lượng lớn cho phí gas.",
+      q3: "Tiện ích của token DEDPOOL là gì?",
+      a3: "Tiện ích chính của DedPool là khả năng mua token với giá rất thấp và sau đó staking để kiếm lợi nhuận passively. Hợp đồng thông minh tích hợp cơ chế đốt cháy, dẫn đến việc đốt cháy 0.1% của mỗi giao dịch và thêm vào đó, 15% của tổng nguồn cung được phân bổ cho việc đốt cháy.",
+      q4: "DEDPOOL sẽ ra mắt khi nào?",
+      a4: "Chúng tôi dự định sẽ ra mắt DedPool trên một sàn giao dịch phi tập trung trong vài tuần kể từ đầu pre-sale, tùy thuộc vào việc nhanh chóng kết thúc nó.",
+      q5: "Nơi nào để nhận token từ pre-sale?",
+      a5: "Sau khi kết thúc pre-sale, bạn sẽ có thể nhận token của mình ngay sau đó thông qua trang web DedPool. Việc nhận token và niêm yết có thể diễn ra vào cùng một ngày và giờ. Ngoài ra, bạn sẽ có tùy chọn để staking token của mình trước ngày niêm yết chính thức, đảm bảo một vị trí staking sớm.",
+    },
+    footer: {
+      termsofservice: "Điều Khoản Dịch Vụ",
+      privacypolicy: "Chính Sách Quyền Riêng Tư",
+      cookies: "Cookies",
+      rights: "Mọi quyền được bảo lưu",
+      disclaimer:
+        "Tuyên bố: Tiền điện tử có tính biến động và có thể tăng giảm giá trị. Lợi nhuận có thể chịu thuế thu nhập cá nhân hoặc các loại thuế khác áp dụng trong khu vực của bạn. $dedpool là một token đặc biệt được tạo ra cho mục đích thử nghiệm. Đồng coin $dedpool không liên quan gì đến truyện tranh hay bộ phim Deadpool. Token này đơn giản là để tưởng nhớ một anh hùng mà chúng ta ai cũng yêu thích và nhận ra.",
+    },
+    widget: {
+      time: "THỜI GIAN ĐẾN TĂNG GIÁ TIẾP THEO",
+      UPI: "Cho Đến Khi Giá Tăng",
+      USDT_RAISED: "USDT ĐÃ HUY ĐỘNG",
+      purchased: "SỐ LƯỢNG $DEDPOOL BẠN ĐÃ MUA",
+      staked: "SỐ LƯỢNG $DEDPOOL BẠN ĐÃ STAKE",
+      pay: "bạn trả",
+      receive: "bạn nhận",
+      connect: "KẾT NỐI VÍ",
+      buy_now: "Mua Ngay",
+      buying: "Đang Mua",
+      purchase: "Mua thành công!",
+      transaction: "Xem Giao Dịch",
+      purchased_info:
+        "Số lượng token đã mua của bạn là tất cả các token mà bạn đã mua bằng ví đã kết nối. Điều này bao gồm cả token đã stake và chưa stake.",
+      staked_info:
+        "Token $DED chưa được nhận mà đã được mua bằng BNB hoặc USDT có thể được staked ngay bây giờ. Lưu ý rằng tất cả các token đã stake sớm có thể được rút sau 7 ngày kể từ khi quyền nhận token được kích hoạt, điều này sẽ xảy ra sau khi kết thúc pre-sale.",
+    },
+    errors: {
+      Chain_mismatch: "Vui lòng chuyển sang Binance Smart Chain!",
+      allowance: "Đảm bảo thêm đủ quyền để mua với USDT!",
+      invalid_sale_amount: "Số lượng bán không hợp lệ!",
+      less_payment: "Đảm bảo bạn trả đủ BNB cho gas và trao đổi token!",
+      exceeds_balance:
+        "Bạn không có đủ BNB để thanh toán cho giao dịch này! Đảm bảo bạn có đủ BNB cho gas và trao đổi token.",
+      user_rejected: "Người dùng từ chối yêu cầu!",
+    },
+  },
+};
+
+export default vi;
