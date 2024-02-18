@@ -1,23 +1,25 @@
 import React from "react";
 import hero from "../assets/hero2.png";
+import { useTranslation } from "react-i18next";
 
 const FeatureTwo = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="hero-section-father-3">
       <div className="feature-container two">
         <div className="feature-description">
           <div className="feature-description-title">
             <h2>
-              <span className="highlighted">STAKE TO EARN</span>
+              <span className="highlighted">{t("about.q4")}</span>
             </h2>
           </div>
           <p className="feature-description-paragraph">
-            • DedPool will provide passive rewards for all holders who stake
-            their $DEDPOOL tokens in our smart contract <br />
-            • 40% of the token supply will be paid out to participants in the
-            staking pool as rewards <br />• Anybody holding $DEDPOOL can stake
-            their tokens to earn passive income with rewards based on your
-            percentage of the total staking pool
+            {t("about.a4")}
+            <br />
+            {t("about.a42")}
+            <br />
+            {t("about.a43")}
           </p>
         </div>
         <div className="feature-description three">
@@ -27,16 +29,10 @@ const FeatureTwo = () => {
           <div className="feature-description-inside">
             <div className="feature-description-title">
               <h2>
-                <span className="highlighted">DEFLATIONARY BURNING</span>
+                <span className="highlighted">{t("about.q5")}</span>
               </h2>
             </div>
-            <p className="feature-description-paragraph">
-              $DEDPOOL is structured as a deflationary token, incorporating a
-              buy and burn model. With each buy and sell transaction, 0.1% is
-              sent to a burn address. Additionally, 10% of the entire supply is
-              allotted for burning. These strategies aim to diminish the token's
-              supply over time, increasing scarcity.
-            </p>
+            <p className="feature-description-paragraph">{t("about.a5")}</p>
           </div>
         </div>
       </div>

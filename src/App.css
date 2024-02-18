@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: roqueFont;
-  src: url("D:\Studies\others\react js\crypto-webapp\src\assets\fonts\roguehero.ttf");
+  src: url("D:\CP\cryptoApp\src\assets\fonts\roguehero.ttf");
 }
 
 @font-face {
-  font-family: acmeFont;
-  src: url("D:\Studies\others\react js\crypto-webapp\src\assets\fonts\Acme-Regular.ttf");
+  font-family: torus;
+  src: url("D:\CP\cryptoApp\src\assets\fonts\TorusNotched-Regular.ttf");
 }
 
 .home {
@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   /* font-family: Comic Sans MS; */
-  font-family: acmeFont;
+  font-family: torus;
 }
 
 a {
@@ -120,7 +120,7 @@ a {
 
 .link-button {
   background-color: transparent;
-  font-family: acmeFont;
+  font-family: torus;
 }
 
 button {
@@ -200,7 +200,7 @@ span.highlighted {
 .hero-section-container {
   font-weight: 500;
   line-height: 50px;
-
+  padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -227,10 +227,11 @@ span.highlighted {
 }
 
 .white-paper-section {
-  margin: 30px 0;
+  /* margin: 30px 0; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding-bottom: 10%;
 }
 
 .home-icon {
@@ -253,11 +254,12 @@ span.highlighted {
 
 .feature-text {
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: comfotaa; */
+  /* Arial, Helvetica, sans-serif; */
   font-weight: 300;
   font-size: 1rem;
   opacity: 0.8;
-  color: grey;
+  /* color: grey; */
 }
 
 /* --> */
@@ -440,6 +442,7 @@ p {
 
 .social-links-container {
   margin: 10px 0;
+  padding: 0 20px;
 }
 
 .social-links a {
@@ -653,6 +656,7 @@ p {
   margin: 0;
   height: 90%;
   font-size: 1.25rem;
+  color: #ffcfdb;
 }
 
 /* @media only screen and (max-width: 768px) {
@@ -828,20 +832,21 @@ p {
   background-size: cover;
 }
 
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.open {
-  max-height: 500px;
-}
-
 .dev-section-description {
   font-size: 1.25rem;
   padding: 20px 0;
   border-bottom: 1px solid white;
+  color: #ffcfdb;
+}
+
+.dev-section-description-last {
+  font-size: 1.25rem;
+  color: #ffcfdb;
+  padding: 20px 0;
+}
+
+.dev-section-description1 {
+  color: #ffcfdb;
 }
 
 .dev-section-container .dev-section-list {
@@ -1152,8 +1157,8 @@ p {
 
 .faq-child1 {
   display: flex;
-  padding-right: 4rem;
   flex-direction: column;
+  padding-right: 4rem;
   justify-content: space-evenly;
   border-right: 2px solid white;
 }
@@ -1171,8 +1176,30 @@ p {
   padding-left: 100px;
 }
 
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
 .question {
   cursor: pointer;
+  /* animation: fadeIn 0.5s ease-in-out; */
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.open {
+  max-height: 500px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1574,4 +1601,246 @@ progress[value]::-moz-progress-bar {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #da0000;
+}
+
+/* my changes */
+.hero-info-description {
+  font-size: x-large;
+}
+
+.hero-info-caption {
+  width: 50%;
+  font-weight: bold;
+  font-size: large;
+  color: #ffcfdb;
+}
+
+.hero-info-caption1 {
+  /* width: 50%; */
+  font-weight: 300;
+  font-size: medium;
+  color: #ffcfdb;
+}
+
+.hero-info-dedpool {
+  text-align: right;
+  font-size: larger;
+}
+
+.image-gallery-container {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+}
+
+.image-gallery-container::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-image {
+  margin: 0px 15px 0px 15px;
+  max-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .image-gallery-container {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Space items evenly on the row */
+    padding: 20px; /* Adjust padding for better spacing */
+  }
+
+  .gallery-image {
+    width: calc(50% - 20px); /* Show 2 images per row with some spacing */
+    margin: 5px;
+    padding: 5px 30px 5px 30px;
+  }
+}
+
+.staking-header {
+  padding: 0 0 0 60px;
+}
+
+@media (max-width: 768px) {
+  .staking-header {
+    padding: 0 0 0 20px;
+  }
+}
+
+.staking-description {
+  padding: 0px 60px 0px 60px;
+  font-size: large;
+  color: #ffcfdb;
+}
+
+.staking-container {
+  display: grid;
+  width: 60%;
+  height: 100%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin: 80px auto;
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 40px; /* Rounded corners */
+  overflow: hidden;
+  padding: 20px;
+}
+
+.left-column {
+  grid-column: 1; /* Span the first column */
+  line-height: 40px;
+  margin: 0;
+  height: 90%;
+  font-size: 1.25rem;
+  color: #ffcfdb;
+}
+
+.right-column {
+  grid-column: 2; /* Span the second column */
+  display: flex;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Example styles for buttons */
+.button {
+  padding: 10px;
+  background-color: darkgrey;
+  color: grey;
+  border: none;
+  cursor: not-allowed;
+  font-family: torus;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-column {
+    padding-left: 10%;
+  }
+
+  .staking-container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    padding: 10px;
+    margin: 10%;
+    width: 80%;
+  }
+
+  .right-column {
+    grid-column: auto; /* Remove grid-column for full width in mobile */
+    justify-content: center;
+  }
+
+  .feature-description-paragraph {
+    font-size: 0.8rem;
+  }
+}
+
+.language-selector {
+  position: relative;
+  justify-self: end;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: comfortaa;
+  font-size: large;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: black;
+  max-height: 300px; /* Set the maximum height of the dropdown content */
+  overflow-y: auto;
+  scrollbar-color: black transparent; /* Firefox */
+  scrollbar-width: thin;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.dropdown-content button {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-family: comfortaa;
+  font-size: large;
+  background-color: black;
+  font-size: medium;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.language-selector:hover .dropdown-content {
+  display: block;
+}
+
+.down-arrow {
+  display: inline-block;
+  margin-left: 5px; /* Adjust the margin as needed */
+}
+
+.hero-two-columns-container {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hero-two-columns-container {
+    flex-direction: column;
+  }
+}
+
+.header-button {
+  background-color: #da0000;
+  /* font-size: 1rem; */
+  /* width: 50%; */
+  /* margin: 0 25%; */
+  justify-content: center;
+  color: white;
+  font-family: "torus";
+  /* padding: 3px; */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  /* margin: 5px; */
+}
+
+.button-container {
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-container {
+    padding: 10px 0;
+  }
 }

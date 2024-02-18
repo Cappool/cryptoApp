@@ -2,28 +2,31 @@ import React from "react";
 import dev from "../assets/hero3.png";
 import Accordions from "./Accordions";
 import Footer from "./Footer";
+import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
+  const { t } = useTranslation();
+
   const quests = [
     {
-      quest: "What is DEDPOOL?",
-      ans: " DedPool is an ERC-20 token built on the ethereum chain with the latest crypto market trend of giving second chance for people who missed out on successful legacy tokens. The name ‘DEDPOOL’ stands for Determined Efficient Decentralized crypto Pool.",
+      quest: t("faq.q1"),
+      ans: t("faq.a1"),
     },
     {
-      quest: "Why Launch on Ethereum?",
-      ans: "Launching DedPool as an ERC-20 token offers numerous advantages to investors. Ethereum stands out as the most widely adopted and secure blockchain, with many decentralized wallet options. This ensures a seamless experience for buyers, enabling them to securely store, monitor, and trade DedPool tokens.",
+      quest: t("faq.q2"),
+      ans: t("faq.a2"),
     },
     {
-      quest: "What is the token utility of DEDPOOL?",
-      ans: "DedPool's primary utility lies in the ability to acquire the token at an exceptionally low cost and subsequently stake it for earning passive rewards. The smart contract incorporates a deflationary mechanism, resulting in the burning of 0.1% of every transaction and additionally, 10% of the entire supply is allotted for burning.",
+      quest: t("faq.q3"),
+      ans: t("faq.a3"),
     },
     {
-      quest: "When DEDPOOL will launch?",
-      ans: " We aim to launch DedPool on a decentralized exchange within several weeks from the start of the presale, depending on how quickly it can be concluded.",
+      quest: t("faq.q4"),
+      ans: t("faq.a4"),
     },
     {
-      quest: "Where can I claim my presale tokens?",
-      ans: "Upon the conclusion of the presale, you’ll be able to claim your tokens as soon as possible through the DedPool website. Token claiming and listing will likely be on the same day and time. Also, you will have the option to stake your tokens before the official listing date, securing an early staking position.",
+      quest: t("faq.q5"),
+      ans: t("faq.a5"),
     },
   ];
   return (
@@ -33,7 +36,7 @@ const FAQ = () => {
           <div className="faq-child1">
             <div className="feature-description-title">
               <h1>
-                <span className="highlighted">FREQUENTLY ASKED QUESTIONS</span>
+                <span className="highlighted">{t("faq.title")}</span>
               </h1>
             </div>
             <div className="dev-section-image">

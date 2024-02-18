@@ -1,23 +1,25 @@
 import React from "react";
 import tokenomics1 from "../assets/tokenomics1.png";
 import tokenomics2 from "../assets/tokenomics2.png";
+import { useTranslation } from "react-i18next";
 
 const Tokenomics = () => {
+  const { t } = useTranslation();
   return (
     <div id="tokenomics" className="hero-section-father">
       <div className="tokenomics-container">
         <div className="feature-description token">
           <div className="feature-description-title">
             <h2>
-              <span className="highlighted">TOKENOMICS</span>
+              <span className="highlighted">{t("tokenomics.title")}</span>
             </h2>
           </div>
           <p className="feature-description-paragraph">
-            Total Supply : &nbsp;100,000,000,000 <br /> <br />
-            Presale (40 %) : &nbsp;40,000,000,000 <br />
-            Community rewards (40 %) : &nbsp;40,000,000,000 <br />
-            Burn Allocation (10 %) : &nbsp;10,000,000,000 <br />
-            DEX Liquidity (10 %) : &nbsp;10,000,000,000
+            {t("tokenomics.total_supply")} : &nbsp;100,000,000,000 <br /> <br />
+            {t("tokenomics.presale")} (40 %) : &nbsp;40,000,000,000 <br />
+            {t("tokenomics.staking")} (35 %) : &nbsp;35,000,000,000 <br />
+            {t("tokenomics.burn")} (15 %) : &nbsp;15,000,000,000 <br />
+            {t("tokenomics.liquidity")} (10 %) : &nbsp;10,000,000,000
           </p>
           {/* <div className="btn-container">
           <button className="secondary">

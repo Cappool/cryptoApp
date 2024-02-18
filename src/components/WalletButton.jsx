@@ -1,8 +1,19 @@
 import React from "react";
 
-export default function WalletButton({ image, children }) {
+export default function WalletButton({
+  image,
+  children,
+  connect,
+  disabled,
+  key,
+}) {
   return (
-    <button className="btn connect-wallet-btn">
+    <button
+      disabled={disabled}
+      key={key}
+      onClick={connect}
+      className="btn connect-wallet-btn"
+    >
       <div className="wallet-btn-div">
         <img src={image} alt={`${image}`} className="wallet-btn-icon" />
         {children}

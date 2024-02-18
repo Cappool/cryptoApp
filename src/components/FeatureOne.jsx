@@ -1,9 +1,12 @@
 import React from "react";
 // import TokenCard from "./TokenCard";
 import hero from "../assets/hero.png";
+import { useTranslation } from "react-i18next";
 
 const FeatureOne = () => {
   // const tokens = ["0x", "0xdao"];
+  const { t } = useTranslation();
+
   return (
     <div id="about" className="hero-section-father-2">
       <div className="feature-container">
@@ -12,14 +15,10 @@ const FeatureOne = () => {
         <div className="feature-description">
           <div className="feature-description-title">
             <h2>
-              <span className="highlighted">WHAT IS DEDPOOL</span>
+              <span className="highlighted">{t("about.q1")}</span>
             </h2>
           </div>
-          <p className="feature-description-paragraph">
-            dedPool is an ERC-20 token built on the ethereum chain. The name
-            'DEDPOOL' stands for Determined Efficient Decentralized crypto Pool.
-            Stake $DEDPOOL and earn rewards.
-          </p>
+          <p className="feature-description-paragraph">{t("about.a1")}</p>
           {/* <div className="btn-container">
           <button className="secondary">
             <span>Start swapping</span>
@@ -27,32 +26,18 @@ const FeatureOne = () => {
         </div> */}
           <div className="feature-description-title">
             <h2>
-              <span className="highlighted">
-                A CHANCE TO BUY A TOKEN WE ALL LOVE AND CELEBRATE!
-              </span>
+              <span className="highlighted">{t("about.q2")}</span>
             </h2>
           </div>
-          <p className="feature-description-paragraph">
-            Did you miss any Memecoin pump? You're not alone. Most of us were
-            unaware of some Memecoin's early existence and only know about it
-            when recent prices made news headlines. We're turning that
-            disappointment into opportunity. Imagine telling your coworkers
-            you're quitting because $DEDPOOL mooned?
-          </p>
+          <p className="feature-description-paragraph">{t("about.a2")}</p>
         </div>
         <div className="feature-description">
           <div className="feature-description-title">
             <h2>
-              <span className="highlighted">
-                EARN PASSIVE REWARDS BY STAKING
-              </span>
+              <span className="highlighted">{t("about.q3")}</span>
             </h2>
           </div>
-          <p className="feature-description-paragraph">
-            DedPool is tired of watching other fork tokens, nor is it a
-            pump-and-dump scheme. The $DEDPOOL token is designed to provide
-            daily rewards to stakers for many years to come
-          </p>
+          <p className="feature-description-paragraph">{t("about.a3")}</p>
           <div className="hero-image-container">
             {/* <div className="tokens-container">
           {tokens.map((token, index) => {

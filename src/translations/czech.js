@@ -1,0 +1,128 @@
+const cs = {
+  translation: {
+    header: {
+      home: "domů",
+      about: "o nás",
+      tokenomics: "tokenomics",
+      how_to_buy: "jak nakoupit",
+      roadmap: "cestovní plán",
+      staking: "staking",
+    },
+    home: {
+      description:
+        "kryptoměna není 'f-slovo'... někde tam venku je ta pravá pro vás... stačí se dívat!",
+      // caption:
+      //   "Spadne-li vám $2 na japonského psa, mohl vás to proměnit z obyčejného dvoudolarového investora na štěkajícího milionáře. Zmeškali jsme kryptoyacht se psem, že ne?",
+      caption: "Nemusíš být superhrdina, abys dostal krypto,",
+      caption1: "Správné krypto z tebe vyvolá Hrdinu ",
+      whitepaper: "Bílá kniha",
+      featuredIn: "VYDANÝ V",
+    },
+    about: {
+      q1: "CO JE DEDPOOL?",
+      q2: "ŠANCE K NAKOUPENÍ TOKENU, KTERÝ VŠICHNI MILUJEME A SLAVÍME!",
+      q3: "VYDĚLÁVEJTE PASIVNÍ ODMEŇOVÁNÍ POMOCÍ STAKINGU",
+      q4: "STAKE A VYDĚLÁVEJTE",
+      q5: "DEFLAČNÍ SPALENÍ",
+      a1: "DedPool je token BEP-20 postavený na BNB Smart Chain. Název 'DEDPOOL' znamená Determined Efficient Decentralized crypto Pool. Stake $DEDPOOL a vydělávejte odměny.",
+      a2: "Zmeškal jsi nějaký Memecoin pumpu? Nejsi sám. Většina z nás nebyla obeznámena s existencí některých memecoinů v rané fázi a dozvěděla se o nich až když nedávné ceny udělaly titulky. Hodit $2 na japonského psa by tě mohlo proměnit z obyčejného investora do dvou dolarů v štěkajícího milionáře. Zmeškali jsme kryptoměnovou jachtu, že ne? Tuto zklamání proměňujeme v příležitost. Představ si, že svým spolupracovníkům říkáš, že končíš, protože $DEDPOOL vyšplhal na měsíc?",
+      a3: "DedPool se unavil sledováním jiných fork tokenů, aniž by byl pump-and-dump schéma. Token $DEDPOOL je navržen tak, aby poskytoval denní odměny stakerům po mnoho let.",
+      a4: "• DedPool poskytne pasivní odměny všem držitelům, kteří zacvaknou své tokeny $DEDPOOL do naší chytré smlouvy",
+      a42: "• 35 % zásob tokenů bude vyplaceno účastníkům staking poolu jako odměny",
+      a43: "• Každý, kdo drží $DEDPOOL, může stakeovat své tokeny a vydělávat pasivní příjmy s odměnami na základě vašeho podílu na celkovém staking poolu",
+      a5: "$DEDPOOL je strukturován jako deflační token, který zahrnuje model koupě a spálení. S každou koupí a prodejem se 0,1 % odesílá na spálenou adresu. Kromě toho je 15 % celkového zásobu určeno k spálení. Tyto strategie mají za cíl v průběhu času snížit zásobu tokenů a zvýšit jejich vzácnost.",
+    },
+    tokenomics: {
+      title: "TOKENOMICS",
+      total_supply: "Celková zásoba",
+      presale: "Předprodej",
+      staking: "Odměny ze stakingu",
+      burn: "Přidělení spálení",
+      liquidity: "DEX Likvidita",
+    },
+    how_to_buy: {
+      title: "NÁKUP $DEDPOOL V PŘEDPRODEJI",
+      a1: "Pošlete BNB nebo USDT na svou peněženku",
+      b1: "Můžete směnit tokeny $DEDPOOL za BNB nebo USDT. Ujistěte se, že máte v peněžence dostatečné množství těchto tokenů k pokračování.",
+      a2: "Připojte peněženku a směňte",
+      b2: "Připojte svou peněženku k webu a snadno směňte BNB nebo USDT za $DEDPOOL pomocí nákupního widgetu výše. Pro transakce v předprodeji neplatí žádná nákupní daň.",
+      a3: "Nárok na tokeny v den uvedení do obchodování",
+      b3: "Všichni účastníci předprodeje si mohou nárokovat své tokeny z této webové stránky pomocí stejné peněženky, kterou použili k příspěvku. Tokeny lze nárokovat v den, kdy začne obchodování na DEX.",
+    },
+    roadmap: {
+      title: "CESTOVNÍ PLÁN",
+      r1: "Předprodej a Přidělení tokenů",
+      r2: "Prvním krokem DedPoolu je šíření povědomí o své jedinečné nabídce v dynamickém světě kryptoměn. Poskytováním čerstvé příležitosti pro nováčky se DedPool snaží odlišit od jiných kryptoprojektů. Tato fáze bude zahrnovat transparentní předprodejovou událost, která položí základy pro oddanou a angažovanou komunitu.",
+      r3: "Předstartovní branding a marketing",
+      r4: "Ještě před oficiálním spuštěním bude hlavním zaměřením na komplexní marketingové kampaně. Cílem je zdůraznit, jak snadné a přístupné je získat tokeny $DEDPOOL. Tato marketingová strategie nejen představí DedPool, ale také zdůrazní jeho jedinečnou nabídku, nabízející vzácnou PRVNÍ příležitost na seberealizaci v se měnícím trhu.",
+      r5: "Zahájení obchodování a spalování",
+      r6: "Spuštění tokenů $DEDPOOL na renomovaných DEX, zajistění dostatku likvidity a bezproblémového obchodování. Obchodujte s lehkostí! Připravte revoluci DedPoolu pro veřejnost. Token $DEDPOOL je strukturován jako deflační token, který zahrnuje model koupě a spálení. S každou koupí a prodejem se 0,1 % odesílá na spálenou adresu. Kromě toho je 15 % celkového zásobu určeno k spálení. Tyto strategie mají za cíl v průběhu času snížit zásobu tokenů a zvýšit jejich vzácnost.",
+      r7: "Zapojení komunity po spuštění",
+      r8: "Cesta DedPoolu po spuštění se točí kolem péče a rozšiřování své komunity. Projekt věří v podporu aktivního zapojení a zavede iniciativy, které budou podněcovat účast komunity. DedPool tak usiluje o vštípení hlubokého zájmu mezi svými členy, zajistí, že budou uznáváni a odměňováni za svou věrnost a přínos.",
+    },
+    staking: {
+      title: "VÍTÁME VÁS VE STAKINGU $DEDPOOL",
+      description:
+        "Staking $DEDPOOL bude spuštěn v nadcházejících dnech, což vám umožní vydělávat odměny. Vaše odměny budou určeny podle vašeho podílu na staking poolu $DEDPOOL a procentuální sazby výnosu za rok. Buďte naladěni na další aktualizace.",
+      s1: "STAKED ZŮSTATEK",
+      s2: "VÁŠ STAKABLE",
+      s3: "APY",
+      s4: "CELKOVÝ STAKED",
+      s5: "CELKOVÉ ODPOVĚDI",
+      b1: "Vybrat zaklíčované tokeny",
+      b2: "Přidat do stake",
+      b3: "Vyzvednout odměny",
+    },
+    faq: {
+      title: "ČASTO KLADENÉ OTÁZKY",
+      q1: "Co je DEDPOOL?",
+      a1: "DedPool je token BEP-20 postavený na BNB Smart Chain s nejnovějšími trendy na kryptoměnovém trhu, které dávají druhou šanci lidem, kteří minuli úspěšné legacy tokeny. Název 'DEDPOOL' znamená Determined Efficient Decentralized Crypto Pool.",
+      q2: "Proč spustit na BNB Smart Chain?",
+      a2: "BNB Smart Chain, podporovaný největší burzou Binance, má rozsáhlou síť a podporu oddané komunity. Naším cílem je sloužit této komunitě představením nového tokenu, který přináší hodnotu do jejich každodenního života. Vzhledem k nižším poplatkům za transakce na BSC se snažíme zajistit, aby naši investoři alokovali své značné finanční prostředky na nákup tokenů místo výrazných částek na poplatcích za transakce.",
+      q3: "Jaký je účel tokenu DEDPOOL?",
+      a3: "Hlavním účelem DEDPOOLu je schopnost získat token za mimořádně nízkou cenu a následně ho zaklíčovat pro pasivní odměny. Chytrá smlouva zahrnuje deflační mechanismus, což vede k vypalování 0,1 % každé transakce a navíc je 15 % celkového zásobu určeno k vypalování.",
+      q4: "Kdy se DEDPOOL spustí?",
+      a4: "Cílem je spustit DedPool na decentralizované burze během několika týdnů od začátku předprodeje, v závislosti na tom, jak rychle to lze dokončit.",
+      q5: "Kde si mohu vyzvednout tokeny z předprodeje?",
+      a5: "Po ukončení předprodeje budete moci své tokeny vyzvednout co nejdříve prostřednictvím webové stránky DedPoolu. Vyzvedávání tokenů a jejich uvedení na trh pravděpodobně proběhnou ve stejný den a čas. Také budete mít možnost zaklíčovat své tokeny před oficiálním datem uvedení na trh a zajistit si tak časnou stakingovou pozici.",
+    },
+    footer: {
+      termsofservice: "Podmínky služby",
+      privacypolicy: "Zásady ochrany osobních údajů",
+      cookies: "Cookies",
+      rights: "Všechna práva vyhrazena",
+      disclaimer:
+        "Upozornění: Kryptoměny jsou volatilní a mohou klesnout i stoupat v hodnotě. Profity mohou být podrobeny daním z kapitálových zisků nebo jiným daním platným ve vaší jurisdikci. $dedpool je spekulativní token vytvořený pro experimentální účely. Mince $dedpool nemá žádnou souvislost s komiksem nebo filmem Deadpool. Tento token jednoduše vzdává hold hrdinovi, kterého všichni milujeme a uznáváme.",
+    },
+    widget: {
+      time: "DALŠÍ ZVÝŠENÍ CENY ZA",
+      UPI: "Do Zvýšení ceny",
+      USDT_RAISED: "ZVÝŠENÉ USDT",
+      purchased: "VAŠE ZAKOUPENÉ $DEDPOOL",
+      staked: "VAŠE ZAKLÍČOVANÉ $DEDPOOL",
+      pay: "platíte",
+      receive: "obdržíte",
+      connect: "PŘIPOJIT PENĚŽENKU",
+      buy_now: "Koupit nyní",
+      buying: "Nákup",
+      purchase: "Nákup úspěšný!",
+      transaction: "Zobrazit transakci",
+      purchased_info:
+        "Vaše celkové zakoupené tokeny jsou všechny tokeny zakoupené pomocí připojené peněženky. To zahrnuje všechny zaklíčované a nezaklíčované tokeny.",
+      staked_info:
+        "Neuplatněný $DED, který byl zakoupen pomocí BNB nebo USDT, může být nyní zaklíčován. Všimněte si, že všechny tokeny zaklíčované v rané fázi lze vybrat 7 dní po spuštění možnosti výběru tokenů, což nastane po ukončení předprodeje.",
+    },
+    errors: {
+      Chain_mismatch: "Přepněte prosím na Binance Smart Chain!",
+      allowance: "Ujistěte se, že máte dostatek povolení k nákupu pomocí USDT!",
+      invalid_sale_amount: "Neplatná částka prodeje!",
+      less_payment:
+        "Ujistěte se, že zaplatíte dost BNB za poplatky a směnu tokenů!",
+      exceeds_balance:
+        "Nemáte dostatek BNB k úhradě této transakce! Ujistěte se, že máte dostatek BNB na poplatky a směnu tokenů.",
+      user_rejected: "Uživatel zamítl požadavek!",
+    },
+  },
+};
+
+export default cs;

@@ -5,10 +5,14 @@ import { ReactComponent as TelegramIcon } from "../assets/icons/telegram.svg";
 import { ReactComponent as TwitterIcon } from "../assets/icons/twitter.svg";
 import { HashLink as Link } from "react-router-hash-link";
 import logo from "../assets/headericon.png";
+import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
+import { useAccount, useConnect, useDisconnect } from "wagmi";
+import Popup from "./Popup";
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-
+  const { t } = useTranslation();
   const toggleExpanded = () =>
     setIsExpanded((prevIsExpanded) => !prevIsExpanded);
 
@@ -23,30 +27,40 @@ const Header = () => {
         <div className="menu">
           <div className="menu-links">
             <Link to="#" smooth>
-              HOME
+              {t("header.home")}
             </Link>
             <Link to="#about" smooth>
-              ABOUT
+              {t("header.about")}
             </Link>
             <Link to="#tokenomics" smooth>
-              TOKENOMICS
+              {t("header.tokenomics")}
             </Link>
             <Link to="#how-to-buy" smooth>
-              HOW TO BUY
+              {t("header.how_to_buy")}
             </Link>
             <Link to="#roadmap" smooth>
-              ROADMAP
+              {t("header.roadmap")}
             </Link>
+            <Link to="#staking" smooth>
+              {t("header.staking")}
+            </Link>
+          </div>
+          {/* <div className="button-container">
+            <ButtonUI />
+          </div> */}
+          <div className="button-container">
+            <LanguageSelector />
           </div>
         </div>
         {/* <div className="wallet-btn">
           <button className="primary">Enter App</button>
         </div> */}
-        {/* <div className="social-links-container">
+
+        <div className="social-links-container">
           <div className="social-links">
-            <a target="_blank" rel="noreferrer" href="https://t.me/dedpoolcoin">
+            {/* <a target="_blank" rel="noreferrer" href="https://t.me/dedpoolcoin">
               <TelegramIcon />
-            </a>
+            </a> */}
             <a
               target="_blank"
               rel="noreferrer"
@@ -55,7 +69,7 @@ const Header = () => {
               <TwitterIcon />
             </a>
           </div>
-        </div> */}
+        </div>
         <button className="hamburger" onClick={toggleExpanded}>
           <MenuIcon />
         </button>
@@ -64,30 +78,39 @@ const Header = () => {
         <div className="menu-overlay">
           <div className="menu-links">
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#">HOME</Link>
+              <Link to="#">{t("header.home")}</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#about">ABOUT</Link>
+              <Link to="#about">{t("header.about")}</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#tokenomics">TOKENOMICS</Link>
+              <Link to="#tokenomics">{t("header.tokenomics")}</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#how-to-buy">HOW TO BUY</Link>
+              <Link to="#how-to-buy">{t("header.how_to_buy")}</Link>
             </button>
             <button className="link-button" onClick={toggleExpanded}>
-              <Link to="#roadmap">ROADMAP</Link>
+              <Link to="#roadmap">{t("header.roadmap")}</Link>
             </button>
+            <button className="link-button" onClick={toggleExpanded}>
+              <Link to="#staking">{t("header.staking")}</Link>
+            </button>
+            {/* <div className="button-container">
+              <ButtonUI />
+            </div> */}
+            <div className="button-container">
+              <LanguageSelector />
+            </div>
           </div>
-          {/* <div className="social-links-container2">
+          <div className="social-links-container2">
             <div className="social-links">
-              <a
+              {/* <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://t.me/dedpoolcoin"
               >
                 <TelegramIcon />
-              </a>
+              </a> */}
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -96,10 +119,46 @@ const Header = () => {
                 <TwitterIcon />
               </a>
             </div>
-          </div> */}
+          </div>
         </div>
       )}
     </>
+  );
+};
+
+const ButtonUI = () => {
+  const { address, connector, isConnected } = useAccount();
+  const { disconnect } = useDisconnect();
+  const [showConnectModal, setShowConnectModal] = useState(false);
+  const handleOpenConnectModal = () => setShowConnectModal(true);
+  const handleCloseConnectModal = () => setShowConnectModal(false);
+  const { t } = useTranslation();
+
+  function formatString(inputString) {
+    if (inputString.length > 10) {
+      const firstPart = inputString.slice(0, 5);
+      const lastPart = inputString.slice(-5);
+      const formattedString = `${firstPart}...${lastPart}`;
+      return formattedString;
+    }
+    return inputString;
+  }
+
+  if (isConnected) {
+    return (
+      <button className="header-button" onClick={disconnect}>
+        {formatString(address)}
+      </button>
+    );
+  }
+
+  return (
+    <div>
+      <button className="header-button" onClick={handleOpenConnectModal}>
+        {t("widget.buy_now")}
+      </button>
+      {showConnectModal && <Popup handlefn={handleCloseConnectModal} />}
+    </div>
   );
 };
 
