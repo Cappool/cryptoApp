@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b835dc79.css",
-    "main.js": "/static/js/main.7fb7261a.js",
-    "static/js/787.91095627.chunk.js": "/static/js/787.91095627.chunk.js",
+    "main.css": "/static/css/main.3996d6ca.css",
+    "main.js": "/static/js/main.e67f2ad4.js",
+    "static/js/961.76477c4b.chunk.js": "/static/js/961.76477c4b.chunk.js",
+    "static/js/13.ccee7aab.chunk.js": "/static/js/13.ccee7aab.chunk.js",
+    "static/js/934.1ecb9d67.chunk.js": "/static/js/934.1ecb9d67.chunk.js",
+    "static/js/206.c88dd44a.chunk.js": "/static/js/206.c88dd44a.chunk.js",
+    "static/js/348.253db404.chunk.js": "/static/js/348.253db404.chunk.js",
+    "static/js/777.cca07082.chunk.js": "/static/js/777.cca07082.chunk.js",
     "static/media/1.png": "/static/media/1.75d254e9b9df0268bd18.png",
     "static/media/tokenomics2.png": "/static/media/tokenomics2.5973b8c4a47dcb940d7e.png",
     "static/media/bg3.png": "/static/media/bg3.1413ee3c2d056504d00c.png",
@@ -12,22 +17,23 @@
     "static/media/hero2.png": "/static/media/hero2.bf992ca000c0b71e2099.png",
     "static/media/home1.png": "/static/media/home1.bb5d76e8a9ae3e91ca4d.png",
     "static/media/tokenomics1.png": "/static/media/tokenomics1.bd22d51232442fb538c6.png",
+    "static/media/TorusNotched-Regular.ttf": "/static/media/TorusNotched-Regular.0421934dc124e68b2237.ttf",
     "static/media/hero3.png": "/static/media/hero3.2ef157e187992f67cf50.png",
+    "static/media/metamask.png": "/static/media/metamask.d9c41a5680a1daaae624.png",
     "static/media/Logo.png": "/static/media/Logo.05200acf581763a9a822.png",
+    "static/media/ded.png": "/static/media/ded.05200acf581763a9a822.png",
     "static/media/headericon.png": "/static/media/headericon.abfda092b7e83a13a7de.png",
     "static/media/roguehero.ttf": "/static/media/roguehero.14168fbf2c68149c123d.ttf",
-    "static/media/banner.png": "/static/media/banner.d97dead7a4c9ebe201cb.png",
-    "static/media/Acme-Regular.ttf": "/static/media/Acme-Regular.f6db4c5c3282b4e95e85.ttf",
+    "static/media/bnb.png": "/static/media/bnb.97b1de7f752ffb8b2021.png",
+    "static/media/wallet_connect.svg": "/static/media/wallet_connect.5225fdcdf508c64928809d95410fb9d7.svg",
     "static/media/twitter.svg": "/static/media/twitter.edbe6c9773fe9219097577d136c880f0.svg",
+    "static/media/info.svg": "/static/media/info.2e968f7ff328be440ddbffacdf99d732.svg",
     "index.html": "/index.html",
     "static/media/menu.svg": "/static/media/menu.3c6d26e95d49a925eac3ab47f232f842.svg",
-    "static/media/telegram.svg": "/static/media/telegram.4907a7c8baadc09079742f3582dd478c.svg",
-    "main.b835dc79.css.map": "/static/css/main.b835dc79.css.map",
-    "main.7fb7261a.js.map": "/static/js/main.7fb7261a.js.map",
-    "787.91095627.chunk.js.map": "/static/js/787.91095627.chunk.js.map"
+    "static/media/telegram.svg": "/static/media/telegram.4907a7c8baadc09079742f3582dd478c.svg"
   },
   "entrypoints": [
-    "static/css/main.b835dc79.css",
-    "static/js/main.7fb7261a.js"
+    "static/css/main.3996d6ca.css",
+    "static/js/main.e67f2ad4.js"
   ]
 }
