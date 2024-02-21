@@ -10,13 +10,25 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-row">
         <div className="terms-section">
-          <a target="_blank" rel="noreferrer" href="javascript:;">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/1u2pRxY3hNkHPcy0v1lawsh1ITuT5Qu6E/view?usp=sharing"
+          >
             <h3>{t("footer.termsofservice")}</h3>
           </a>
-          <a target="_blank" rel="noreferrer" href="javascript:;">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/1ePlXqTJmNj01ixNYrhEk1QWwlguMvY0g/view?usp=sharing"
+          >
             <h3>{t("footer.privacypolicy")}</h3>
           </a>
-          <a target="_blank" rel="noreferrer" href="javascript:;">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/1QkGDADHEcB8TePFTEUeXyIX3ujQadY8w/view?usp=sharing"
+          >
             <h3>{t("footer.cookies")}</h3>
           </a>
         </div>
