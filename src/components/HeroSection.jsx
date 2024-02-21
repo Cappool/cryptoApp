@@ -34,15 +34,15 @@ const HeroSection = () => {
               <img className="home-icon" src={home} alt="home-icon" />
             </div>
             <div className="white-paper-section">
-              {/* <a
+              <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1Pj4o__Pi9MvctcmtSWQl6La_H5ef5RbX/view?usp=sharing"
-              > */}
-              <button className="white-paper-btn">
-                <span>{t("home.whitepaper")}</span>
-              </button>
-              {/* </a> */}
+                href="https://drive.google.com/file/d/1vYZHvxoeFGexaE7vh8DNInqQec6tetlp/view?usp=sharing"
+              >
+                <button className="white-paper-btn">
+                  {t("home.whitepaper")}
+                </button>
+              </a>
             </div>
             {/* <div className="search-container">
             <div className="search-input-wrapper">
