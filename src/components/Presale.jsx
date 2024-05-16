@@ -10,7 +10,6 @@ import contractAbi from "../functions/abi.json";
 import { useTranslation } from "react-i18next";
 import Timer from "./Timer.jsx";
 
-const TARGET_TIMESTAMP = 1706792710;
 const Presale = () => {
   const [coin, setCoin] = useState("BNB");
   const [image, setImage] = useState(bnb);
@@ -19,8 +18,12 @@ const Presale = () => {
   // const [showConnectModal, setShowConnectModal] = useState(false);
   const [input1value, setInput1Value] = useState(0);
   const [input2value, setInput2Value] = useState(0);
-  const value = 0.000096;
   const [latestBnbPrice, setLatestBnbPrice] = useState(0);
+  const [coinPrice, setCoinPrice] = useState(0);
+  const [currentStep, setCurrentStep] = useState(0);
+  const [roundTimeDetails, setRoundTimeDetails] = useState(0);
+  const [roundDetails, setRoundDetails] = useState(0);
+  const [usdraised, setUsdraised] = useState(0);
   const { t } = useTranslation();
   const addr = process.env.REACT_APP_CONTRACT_A;
 
@@ -43,12 +46,13 @@ const Presale = () => {
   function setInput1fn(coin, e) {
     const val = e.target.value;
     let res = 0;
+    const coinPrice = Number(getCoinPrice) / 10 ** 18;
     setInput1Value(val);
     if (coin === "BNB") {
       // res = val * 1000;
       calculateTokenAmount(val);
     } else {
-      res = Math.ceil(val / value);
+      res = Math.ceil(val / coinPrice);
       setInput2Value(res);
     }
   }
@@ -56,12 +60,13 @@ const Presale = () => {
   function setInput2fn(coin, e) {
     const val = e.target.value;
     let res = 0;
+    const coinPrice = Number(getCoinPrice) / 10 ** 18;
     setInput2Value(val);
     if (coin === "BNB") {
       // res = val / 1000;
       calculateBnbAmount(val);
     } else {
-      res = (val * value).toFixed(4);
+      res = (val * coinPrice).toFixed(4);
       setInput1Value(res);
     }
   }
@@ -76,7 +81,7 @@ const Presale = () => {
     address: addr,
     abi: contractAbi,
     functionName: "usdRaised",
-    chainId: 97,
+    chainId: 56,
     watch: true,
   });
   const { data: getUserDeposit, isError: getUserDepositError } =
@@ -85,7 +90,7 @@ const Presale = () => {
       abi: contractAbi,
       functionName: "userDeposits",
       args: [address],
-      chainId: 97,
+      chainId: 56,
       watch: true,
     });
   const { data: getLatestPrice, isError: getLatestPriceError } =
@@ -93,14 +98,48 @@ const Presale = () => {
       address: addr,
       abi: contractAbi,
       functionName: "getLatestPrice",
-      chainId: 97,
+      chainId: 56,
+      watch: true,
+    });
+  const { data: getCoinPrice, isError: getCoinPriceError } = useContractRead({
+    address: addr,
+    abi: contractAbi,
+    functionName: "calculatePrice",
+    args: [1],
+    chainId: 56,
+    watch: true,
+  });
+  const { data: getRoundTimeDetails, isError: getRoundTimeDetailsError } =
+    useContractRead({
+      address: addr,
+      abi: contractAbi,
+      functionName: "roundDetails",
+      args: [2],
+      chainId: 56,
+      watch: true,
+    });
+  const { data: getCurrentStep, isError: getCurrentStepError } =
+    useContractRead({
+      address: addr,
+      abi: contractAbi,
+      functionName: "currentStep",
+      chainId: 56,
+      watch: true,
+    });
+  const { data: getRoundDetails, isError: getRoundDetailsError } =
+    useContractRead({
+      address: addr,
+      abi: contractAbi,
+      functionName: "roundDetails",
+      args: [0],
+      chainId: 56,
       watch: true,
     });
 
   const calculateBnbAmount = (numberOfTokens) => {
     const decimals = 18;
     const bnbPriceInUsd = Number(latestBnbPrice);
-    const tokenPriceInBnb = value / (bnbPriceInUsd / 10 ** decimals);
+    const tokenPriceInBnb = coinPrice / (bnbPriceInUsd / 10 ** decimals);
     const totalBnbAmount = numberOfTokens * tokenPriceInBnb;
     const factor = Math.pow(10, 10);
     const fBnbAmount = Math.ceil(totalBnbAmount * factor) / factor;
@@ -113,36 +152,53 @@ const Presale = () => {
     const bnbPriceInUsd = Number(latestBnbPrice);
     console.log("Latest Price", Number(getLatestPrice));
     console.log("BNB price ", bnbPriceInUsd / 10 ** decimals);
-    const tokenPriceInBnb = value / (bnbPriceInUsd / 10 ** decimals);
+    const tokenPriceInBnb = coinPrice / (bnbPriceInUsd / 10 ** decimals);
     const totalTokenAmount = Math.floor(bnbAmount / tokenPriceInBnb);
 
     setInput2Value(totalTokenAmount);
   };
 
   useEffect(() => {
-    // console.log("Latest Price", getLatestPrice);
-    // console.log("Latest Price", Number(getLatestPrice));
-    // console.log("----------------------------------------");
     setLatestBnbPrice(getLatestPrice);
-  }, [getLatestPrice]);
+    setCoinPrice(Number(getCoinPrice) / 10 ** 18);
+    setCurrentStep(Number(getCurrentStep));
+    setRoundDetails(getRoundDetails);
+    setRoundTimeDetails(getRoundTimeDetails);
+    setUsdraised(getUSDraised);
+  }, [
+    getLatestPrice,
+    getCoinPrice,
+    getCurrentStep,
+    getRoundDetails,
+    getRoundTimeDetails,
+    getUSDraised,
+  ]);
 
   return (
     <div className="presale">
       <div className="timer">
         <div className="timer-description">{t("widget.time")}</div>
-        <Timer targetTimestamp={TARGET_TIMESTAMP} />
+        <Timer targetTimestamp={Number(roundTimeDetails[currentStep])} />
       </div>
       <div className="progress-container">
         <progress
           className="progress"
           value={Math.round(Number(getUSDraised) / 10 ** 18)}
-          max="420000"
+          max={Math.round(Number(roundDetails[currentStep]) * coinPrice)}
         />
         <div className="progress-text">{t("widget.UPI")}</div>
       </div>
       <div>
-        <strong>{t("widget.USDT_RAISED")}</strong> : $
-        {(Number(getUSDraised) / 10 ** 18).toFixed(2)} / $420,000
+        <strong>{t("widget.USDT_RAISED")}</strong> :{" "}
+        {(Number(usdraised) / 10 ** 18).toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+        })}{" "}
+        /{" "}
+        {(Number(roundDetails[currentStep]) * coinPrice).toLocaleString(
+          "en-US",
+          { style: "currency", currency: "USD" }
+        )}
       </div>
       <div>
         <strong>{t("widget.purchased")}</strong> ={" "}
@@ -158,7 +214,7 @@ const Presale = () => {
         </button>
       </div> */}
       <div className="division-section">
-        <div className="line"></div>1 DEDPOOL= $0.0092
+        <div className="line"></div>1 DEDPOOL = ${coinPrice}
         <div className="line"></div>
       </div>
       {/* <div className="presale-exchange-section"> */}
@@ -193,6 +249,30 @@ const Presale = () => {
               type="number"
               value={input1value}
               onChange={(e) => {
+                // const validKeys = [
+                //   "0",
+                //   "1",
+                //   "2",
+                //   "3",
+                //   "4",
+                //   "5",
+                //   "6",
+                //   "7",
+                //   "8",
+                //   "9",
+                //   "Backspace",
+                //   "Delete",
+                //   "ArrowLeft",
+                //   "ArrowRight",
+                //   "Home",
+                //   "End",
+                // ];
+
+                // // Check if the pressed key is a valid key
+                // if (!validKeys.includes(e.key)) {
+                //   // Prevent the default action (typing the character)
+                //   e.preventDefault();
+                // }
                 setInput1fn(coin, e);
               }}
             />
@@ -207,7 +287,31 @@ const Presale = () => {
               type="number"
               value={input2value}
               onChange={(e) => {
+                // const validKeys = [
+                //   "0",
+                //   "1",
+                //   "2",
+                //   "3",
+                //   "4",
+                //   "5",
+                //   "6",
+                //   "7",
+                //   "8",
+                //   "9",
+                //   "Backspace",
+                //   "Delete",
+                //   "ArrowLeft",
+                //   "ArrowRight",
+                //   "Home",
+                //   "End",
+                // ];
+
+                // // Check if the pressed key is a valid key
+                // if (!validKeys.includes(e.key)) {
+                //   // Prevent the default action (typing the character)
+                //   e.preventDefault();
                 setInput2fn(coin, e);
+                // }
               }}
             />
             <img src={ded} alt="ded" className="presale-coin-image" />

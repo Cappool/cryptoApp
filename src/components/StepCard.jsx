@@ -6,7 +6,7 @@ const StepCard = ({ step, description }) => {
     <div className="stepCard">
       <img src={logo} alt="logo" className="logo" />
       <div className="stepCardInfo">
-        <h2 className="stepCardTitle">Q1 2024</h2>
+        <h2 className="stepCardTitle">Q2 2024</h2>
         <h2 className="stepCardTitle2">{step}</h2>
         {/* <p className="stepDescription">{description}</p> */}
         <div className="stepDescription">{description}</div>
