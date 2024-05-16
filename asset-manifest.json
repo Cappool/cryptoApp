@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.acb03914.css",
-    "main.js": "/static/js/main.5c817dc1.js",
+    "main.css": "/static/css/main.88d53e81.css",
+    "main.js": "/static/js/main.0045c16f.js",
     "static/js/961.76477c4b.chunk.js": "/static/js/961.76477c4b.chunk.js",
     "static/js/13.ccee7aab.chunk.js": "/static/js/13.ccee7aab.chunk.js",
-    "static/js/934.1ecb9d67.chunk.js": "/static/js/934.1ecb9d67.chunk.js",
+    "static/js/934.b04dceff.chunk.js": "/static/js/934.b04dceff.chunk.js",
     "static/js/206.c88dd44a.chunk.js": "/static/js/206.c88dd44a.chunk.js",
     "static/js/348.253db404.chunk.js": "/static/js/348.253db404.chunk.js",
     "static/js/777.cca07082.chunk.js": "/static/js/777.cca07082.chunk.js",
@@ -23,17 +23,18 @@
     "static/media/Logo.png": "/static/media/Logo.05200acf581763a9a822.png",
     "static/media/ded.png": "/static/media/ded.05200acf581763a9a822.png",
     "static/media/headericon.png": "/static/media/headericon.abfda092b7e83a13a7de.png",
+    "static/media/psale.png": "/static/media/psale.80885fe4ccf7c3180a21.png",
     "static/media/roguehero.ttf": "/static/media/roguehero.14168fbf2c68149c123d.ttf",
     "static/media/bnb.png": "/static/media/bnb.97b1de7f752ffb8b2021.png",
     "static/media/wallet_connect.svg": "/static/media/wallet_connect.5225fdcdf508c64928809d95410fb9d7.svg",
-    "static/media/twitter.svg": "/static/media/twitter.edbe6c9773fe9219097577d136c880f0.svg",
     "static/media/info.svg": "/static/media/info.2e968f7ff328be440ddbffacdf99d732.svg",
     "index.html": "/index.html",
+    "static/media/twitter1.svg": "/static/media/twitter1.5e6bc85aa89cf46878248a3e8de96f17.svg",
     "static/media/menu.svg": "/static/media/menu.3c6d26e95d49a925eac3ab47f232f842.svg",
     "static/media/telegram.svg": "/static/media/telegram.4907a7c8baadc09079742f3582dd478c.svg"
   },
   "entrypoints": [
-    "static/css/main.acb03914.css",
-    "static/js/main.5c817dc1.js"
+    "static/css/main.88d53e81.css",
+    "static/js/main.0045c16f.js"
   ]
 }
