@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as TelegramIcon } from "../assets/icons/telegram.svg";
-import { ReactComponent as TwitterIcon } from "../assets/icons/twitter.svg";
+import { ReactComponent as TwitterIcon } from "../assets/icons/twitter1.svg";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -13,21 +13,21 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/1u2pRxY3hNkHPcy0v1lawsh1ITuT5Qu6E/view?usp=sharing"
+            href="https://drive.google.com/file/d/1vEDRR1PPIBDjA7bZA9WI4laF0LLMOOJq/view?usp=sharing"
           >
             <h3>{t("footer.termsofservice")}</h3>
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/1ePlXqTJmNj01ixNYrhEk1QWwlguMvY0g/view?usp=sharing"
+            href="https://drive.google.com/file/d/1M8NkrLctciQOA6VNmp-RCYB-a7r1mJRS/view?usp=sharing"
           >
             <h3>{t("footer.privacypolicy")}</h3>
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/1QkGDADHEcB8TePFTEUeXyIX3ujQadY8w/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nd0Rl9q7Y9NGFcs48uygUVO5GdoZXQGf/view?usp=sharing"
           >
             <h3>{t("footer.cookies")}</h3>
           </a>
@@ -39,14 +39,14 @@ const Footer = () => {
             </div>
             <div className="social-links-container2">
               <div className="social-links again">
-                {/* <a
+                <a
                   className="icon"
                   target="_blank"
                   rel="noreferrer"
                   href="https://t.me/dedpoolcoin"
                 >
                   <TelegramIcon />
-                </a> */}
+                </a>
                 <a
                   className="icon"
                   target="_blank"

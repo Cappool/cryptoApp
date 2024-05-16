@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
 import { ReactComponent as TelegramIcon } from "../assets/icons/telegram.svg";
-import { ReactComponent as TwitterIcon } from "../assets/icons/twitter.svg";
+import { ReactComponent as TwitterIcon } from "../assets/icons/twitter1.svg";
 import { HashLink as Link } from "react-router-hash-link";
 import logo from "../assets/headericon.png";
 import LanguageSelector from "./LanguageSelector";
@@ -58,9 +58,9 @@ const Header = () => {
 
         <div className="social-links-container">
           <div className="social-links">
-            {/* <a target="_blank" rel="noreferrer" href="https://t.me/dedpoolcoin">
+            <a target="_blank" rel="noreferrer" href="https://t.me/dedpoolcoin">
               <TelegramIcon />
-            </a> */}
+            </a>
             <a
               target="_blank"
               rel="noreferrer"
@@ -104,13 +104,13 @@ const Header = () => {
           </div>
           <div className="social-links-container2">
             <div className="social-links">
-              {/* <a
+              <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://t.me/dedpoolcoin"
               >
                 <TelegramIcon />
-              </a> */}
+              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -125,6 +125,21 @@ const Header = () => {
     </>
   );
 };
+
+// const BuyBotton = () => {
+//   const { t } = useTranslation();
+//   const handleClick = () => {
+//     window.open("https://twitter.com/dedpoolcoin", "_blank");
+//   };
+
+//   return (
+//     <div>
+//       <button className="header-button" onClick={handleClick}>
+//         {t("widget.buy_now")}
+//       </button>
+//     </div>
+//   );
+// };
 
 const ButtonUI = () => {
   const { address, connector, isConnected } = useAccount();

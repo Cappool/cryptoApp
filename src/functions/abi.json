@@ -10,6 +10,16 @@
         "internalType": "uint256",
         "name": "_endTime",
         "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_paymentWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[][3]",
+        "name": "_rounds",
+        "type": "uint256[][3]"
       }
     ],
     "stateMutability": "nonpayable",

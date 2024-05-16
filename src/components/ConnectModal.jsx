@@ -27,7 +27,7 @@ export default function ConnectModal({ coin, amount, value }) {
     abi: contractAbi,
     functionName: "buyWithUSDT",
     args: [amount, false],
-    chainId: 97,
+    chainId: 56,
   });
 
   const { data, error, isError, write } = useContractWrite(config);
@@ -44,6 +44,9 @@ export default function ConnectModal({ coin, amount, value }) {
     else if (msg.includes("Less payment")) return t("errors.less_payment");
     else if (msg.includes("exceeds the balance of the account"))
       return t("errors.exceeds_balance");
+    else if (msg.includes("exceeds max tokens to buy"))
+      return t("You cannot buy more than 300000000 tokens!");
+    else if (msg.includes("Cannot convert")) return "Enter digits only!";
     return msg;
   };
 
@@ -57,16 +60,16 @@ export default function ConnectModal({ coin, amount, value }) {
       return (
         <BuyWithBNB
           amount={amount}
-          value={value + 0.01}
+          value={value + 0.000001}
           prepareErrorMsg={prepareErrorMsg}
           errorMsg={errorMsg}
         />
       );
     }
     return (
-      <div>
+      <div className="bottom-container">
         {isPrepareError && (
-          <div>
+          <div className="errormsg-container">
             <a style={{ color: "red" }}>
               {prepareErrorMsg(prepareError?.message)}
             </a>
@@ -92,7 +95,9 @@ export default function ConnectModal({ coin, amount, value }) {
             </a>
           </div>
         )}
-        {isError && <div>{errorMsg(error.message)}</div>}
+        {isError && (
+          <div className="bottom_error">{errorMsg(error.message)}</div>
+        )}
       </div>
     );
   }
@@ -117,7 +122,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
     abi: contractAbi,
     functionName: "buyWithBNB",
     args: [amount, false],
-    chainId: 97,
+    chainId: 56,
     value: parseEther(String(value)),
   });
   const { t } = useTranslation();
@@ -129,9 +134,9 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
   });
 
   return (
-    <div>
+    <div className="bottom-container">
       {isPrepareError && (
-        <div>
+        <div className="errormsg-container">
           <a style={{ color: "red" }}>
             {prepareErrorMsg(prepareError?.message)}
           </a>
@@ -157,7 +162,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
           </a>
         </div>
       )}
-      {isError && <div>{errorMsg(error.message)}</div>}
+      {isError && <div className="bottom_error">{errorMsg(error.message)}</div>}
     </div>
   );
 };

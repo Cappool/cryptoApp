@@ -13,6 +13,7 @@ const LanguageSelector = () => {
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
     setDropdownOpen(false);
+    window.location.reload();
   };
 
   return (

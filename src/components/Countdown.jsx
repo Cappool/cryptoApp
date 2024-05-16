@@ -7,7 +7,9 @@ export default function Countdown({ timeUnit, timeNumber }) {
         <div className="time-unit-value">{timeUnit}</div>
       </div>
       <div className="time-number">
-        <div className="time-number-value">{timeNumber}</div>
+        <div className="time-number-value">
+          {Number.isNaN(timeNumber) ? "--" : timeNumber}
+        </div>
       </div>
     </div>
   );
