@@ -10,7 +10,7 @@ const en = {
     },
     home: {
       description:
-        "crypto is not an 'f-word'... there's one out there for you... just keep looking!",
+        "Crypto is not an 'f-word'... there's one out there for you... just keep looking!",
       // "❝ You don't need to be a superhero to get the crypto, ...the right crypto will bring out the HERO in you ❞",
       // "",
       caption: " You don't need to be a superhero to get the crypto,",
