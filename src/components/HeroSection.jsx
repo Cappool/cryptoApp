@@ -26,7 +26,7 @@ const HeroSection = () => {
         <div className="hero-info-wrapper">
           <div className="hero-info-text">
             <h1>$dedPool</h1>
-            {/* <p className="hero-info-description">{t("home.description")}</p> */}
+            <p className="hero-info-description">...Maximum effort!!</p>
             <div className="hero-two-columns-container">
               <p className="hero-info-caption">
                 ❝ {t("home.caption")}
@@ -44,6 +44,13 @@ const HeroSection = () => {
                 <button className="white-paper-btn">
                   {t("home.whitepaper")}
                 </button>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/1G3pIysj-8t9KCQkYBcV3jTneGtkKMSzN/view?usp=sharing"
+              >
+                <button className="white-paper-btn">Audit</button>
               </a>
             </div>
           </div>
