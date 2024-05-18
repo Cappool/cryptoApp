@@ -11,8 +11,6 @@ const en = {
     home: {
       description:
         "Crypto is not an 'f-word'... there's one out there for you... just keep looking!",
-      // "❝ You don't need to be a superhero to get the crypto, ...the right crypto will bring out the HERO in you ❞",
-      // "",
       caption: " You don't need to be a superhero to get the crypto,",
       caption1: "The right crypto will bring out the HERO in you ",
       whitepaper: "Whitepaper",

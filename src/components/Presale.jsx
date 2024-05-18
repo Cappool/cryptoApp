@@ -287,31 +287,7 @@ const Presale = () => {
               type="number"
               value={input2value}
               onChange={(e) => {
-                // const validKeys = [
-                //   "0",
-                //   "1",
-                //   "2",
-                //   "3",
-                //   "4",
-                //   "5",
-                //   "6",
-                //   "7",
-                //   "8",
-                //   "9",
-                //   "Backspace",
-                //   "Delete",
-                //   "ArrowLeft",
-                //   "ArrowRight",
-                //   "Home",
-                //   "End",
-                // ];
-
-                // // Check if the pressed key is a valid key
-                // if (!validKeys.includes(e.key)) {
-                //   // Prevent the default action (typing the character)
-                //   e.preventDefault();
                 setInput2fn(coin, e);
-                // }
               }}
             />
             <img src={ded} alt="ded" className="presale-coin-image" />
