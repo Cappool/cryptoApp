@@ -164,7 +164,7 @@ const Presale = () => {
     setCurrentStep(Number(getCurrentStep));
     setRoundDetails(getRoundDetails);
     setRoundTimeDetails(getRoundTimeDetails);
-    setUsdraised(getUSDraised);
+    setUsdraised(Number(getUSDraised) / 10 ** 18);
   }, [
     getLatestPrice,
     getCoinPrice,
@@ -183,14 +183,14 @@ const Presale = () => {
       <div className="progress-container">
         <progress
           className="progress"
-          value={Math.round(Number(getUSDraised) / 10 ** 18)}
+          value={Math.round(usdraised)}
           max={Math.round(Number(roundDetails[currentStep]) * coinPrice)}
         />
         <div className="progress-text">{t("widget.UPI")}</div>
       </div>
       <div>
         <strong>{t("widget.USDT_RAISED")}</strong> :{" "}
-        {(Number(usdraised) / 10 ** 18).toLocaleString("en-US", {
+        {usdraised.toLocaleString("en-US", {
           style: "currency",
           currency: "USD",
         })}{" "}

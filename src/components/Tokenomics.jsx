@@ -15,11 +15,11 @@ const Tokenomics = () => {
             </h2>
           </div>
           <p className="feature-description-paragraph">
-            {t("tokenomics.total_supply")} : &nbsp;1,000,000,000 <br /> <br />
-            {t("tokenomics.presale")} (40 %) : &nbsp;400,000,000 <br />
-            {t("tokenomics.staking")} (35 %) : &nbsp;350,000,000 <br />
-            {t("tokenomics.liquidity")} (10 %) : &nbsp;100,000,000 <br />
-            {t("tokenomics.burn")} (15 %) : &nbsp;150,000,000
+            {t("tokenomics.total_supply")} : &nbsp;100,000,000,000 <br /> <br />
+            {t("tokenomics.presale")} (40 %) : &nbsp;40,000,000,000 <br />
+            {t("tokenomics.staking")} (35 %) : &nbsp;35,000,000,000 <br />
+            {t("tokenomics.liquidity")} (10 %) : &nbsp;10,000,000,000 <br />
+            {t("tokenomics.burn")} (15 %) : &nbsp;15,000,000,000
           </p>
           {/* <div className="btn-container">
           <button className="secondary">

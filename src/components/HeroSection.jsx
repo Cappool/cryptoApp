@@ -39,7 +39,7 @@ const HeroSection = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1cyhQ6aWE0eUg8tL1S2hgGZdOJfN5EoOW/view?usp=drive_link"
+                href="https://drive.google.com/file/d/13AptxaSm98HmN65bWRTybHTmX7bBGQVd/view?usp=sharing"
               >
                 <button className="white-paper-btn">
                   {t("home.whitepaper")}
@@ -48,7 +48,7 @@ const HeroSection = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1G3pIysj-8t9KCQkYBcV3jTneGtkKMSzN/view?usp=sharing"
+                href="https://drive.google.com/file/d/1bL25BEUMc5NPYV78cjVx7Qgfck4HEMbJ/view?usp=sharing"
               >
                 <button className="white-paper-btn">Audit</button>
               </a>
@@ -116,7 +116,7 @@ const PresaleTimer = () => {
     <div className="presale">
       <div className="timer">
         <div className="presale-timer-description">PRESALE STARTS IN</div>
-        <Timer targetTimestamp="1716542892" />
+        <Timer targetTimestamp="1717218000" />
       </div>
     </div>
   );
