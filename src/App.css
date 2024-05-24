@@ -1645,7 +1645,7 @@ progress[value]::-moz-progress-bar {
   width: 50%;
   display: grid;
   justify-content: end;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: large;
   color: #ffcfdb;
 }

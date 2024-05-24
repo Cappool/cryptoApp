@@ -1,4 +1,4 @@
-import { useState, React } from "react";
+import { useState, useEffect, React } from "react";
 import contractAbi from "../functions/abi.json";
 import { parseEther } from "viem";
 import { useAccount, useDisconnect } from "wagmi";
@@ -17,6 +17,7 @@ export default function ConnectModal({ coin, amount, value }) {
   const handleOpenConnectModal = () => setShowConnectModal(true);
   const handleCloseConnectModal = () => setShowConnectModal(false);
   const { t } = useTranslation();
+  const [isAL, setisAL] = useState(false);
 
   const {
     config,
@@ -47,6 +48,12 @@ export default function ConnectModal({ coin, amount, value }) {
     else if (msg.includes("exceeds max tokens to buy"))
       return t("You cannot buy more than 300000000 tokens!");
     else if (msg.includes("Cannot convert")) return "Enter digits only!";
+    else if (
+      msg.includes(
+        'The contract function "buyWithUSDT" reverted with the following reason:'
+      )
+    )
+      return "You do not have enough USDT for this transaction! Make sure you have enough USDT for token exchange.";
     return msg;
   };
 
@@ -54,6 +61,10 @@ export default function ConnectModal({ coin, amount, value }) {
     if (msg.includes("User rejected the request"))
       return t("errors.user_rejected");
   };
+
+  useEffect(() => {
+    if (amount >= 10870) setisAL(false);
+  }, [amount]);
 
   if (isConnected) {
     if (coin === "BNB") {
@@ -75,10 +86,21 @@ export default function ConnectModal({ coin, amount, value }) {
             </a>
           </div>
         )}
+        {isAL && (
+          <div className="errormsg-container">
+            <a style={{ color: "red" }}>
+              {prepareErrorMsg("Minimum Purchase amount is $1")}
+            </a>
+          </div>
+        )}
         <button
           className="btn btn-connect"
           disabled={!write}
-          onClick={() => write?.()}
+          onClick={() => {
+            if (amount < 10870) {
+              setisAL(true);
+            } else write?.();
+          }}
         >
           {isLoading ? t("widget.buying") : t("widget.buy_now")}
         </button>
@@ -113,6 +135,7 @@ export default function ConnectModal({ coin, amount, value }) {
 }
 
 const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
+  const [isAL, setisAL] = useState(false);
   const {
     config,
     error: prepareError,
@@ -133,6 +156,10 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
     hash: data?.hash,
   });
 
+  useEffect(() => {
+    if (amount >= 11000) setisAL(false);
+  }, [amount]);
+
   return (
     <div className="bottom-container">
       {isPrepareError && (
@@ -142,10 +169,21 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
           </a>
         </div>
       )}
+      {isAL && (
+        <div className="errormsg-container">
+          <a style={{ color: "red" }}>
+            {prepareErrorMsg("Minimum Purchase amount is 11000 $DEDPOOL")}
+          </a>
+        </div>
+      )}
       <button
         className="btn btn-connect"
         disabled={!write}
-        onClick={() => write?.()}
+        onClick={() => {
+          if (amount < 11000) {
+            setisAL(true);
+          } else write?.();
+        }}
       >
         {isLoading ? t("widget.buying") : t("widget.buy_now")}
       </button>
