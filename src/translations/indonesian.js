@@ -16,6 +16,7 @@ const id = {
       caption: " Anda tidak perlu menjadi superhero untuk mendapatkan kripto,",
       caption1: "Kripto yang tepat akan memunculkan pahlawan dalam diri Anda ",
       whitepaper: "Whitepaper",
+      audit: "Audit",
       featuredIn: "DIMUAT DI",
     },
     about: {

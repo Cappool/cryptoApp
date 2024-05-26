@@ -15,6 +15,7 @@ const zhTraditional = {
       caption: "你不需要成为超级英雄来获得加密货币,",
       caption1: "正确的加密货币会激发你内心的英雄 ",
       whitepaper: "白皮書",
+      audit: "審計",
       featuredIn: "特色報導",
     },
     about: {

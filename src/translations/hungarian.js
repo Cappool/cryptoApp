@@ -16,6 +16,7 @@ const hu = {
       caption: " Nem kell szuperhősnek lenned, hogy beszerezz kriptopénzt,",
       caption1: "A megfelelő kriptopénz hősövé tesz ",
       whitepaper: "Fehérkönyv",
+      audit: "Ellenőrzés",
       featuredIn: "SZEREPELT ITT",
     },
     about: {

@@ -16,6 +16,7 @@ const cs = {
       caption: "Nemusíš být superhrdina, abys dostal krypto,",
       caption1: "Správné krypto z tebe vyvolá Hrdinu ",
       whitepaper: "Bílá kniha",
+      audit: "Audit",
       featuredIn: "VYDANÝ V",
     },
     about: {

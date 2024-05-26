@@ -16,6 +16,7 @@ const sk = {
       caption: " Nie je potrebné byť superhrdinom, aby ste získali kryptomenu,",
       caption1: "Správna kryptomena vás urobí Hrdinom ",
       whitepaper: "Bielokniha",
+      audit: "Audit",
       featuredIn: "VYŠIEL V",
     },
     about: {
