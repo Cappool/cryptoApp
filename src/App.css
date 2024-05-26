@@ -290,9 +290,42 @@ span.highlighted {
   }
 
   .hero-section-container .hero-info-wrapper .hero-info-text h1 {
-    font-size: 25px;
-    line-height: normal;
-    margin: 20px 0;
+    font-size: xxx-large;
+    /* line-height: normal; */
+    /* margin: 20px 0; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-section-container
+    .hero-info-wrapper
+    .hero-info-text
+    .hero-info-description {
+    display: grid;
+    width: 100%;
+    justify-content: end;
+    font-size: medium;
+    color: #ffcfdb;
+  }
+
+  .hero-section-container
+    .hero-info-wrapper
+    .hero-info-text
+    .hero-info-caption {
+    width: 90%;
+    font-weight: bold;
+    font-size: large;
+    color: #ffcfdb;
+  }
+
+  .hero-section-container
+    .hero-info-wrapper
+    .hero-info-text
+    .hero-info-caption1 {
+    /* width: 50%; */
+    font-weight: 300;
+    font-size: medium;
+    color: #ffcfdb;
   }
 
   .white-paper-section {

@@ -1,7 +1,7 @@
 // import search from "../assets/icons/search.svg";
 import React from "react";
 import home from "../assets/home1.png";
-import psale from "../assets/psale.png";
+// import psale from "../assets/psale.png";
 // import banner from "../assets/banner.png";
 // import f1 from "../assets/f1.png";
 // import f2 from "../assets/f2.png";
@@ -88,28 +88,28 @@ const HeroSection = () => {
   );
 };
 
-const BuyBotton = () => {
-  const { t } = useTranslation();
-  const handleClick = () => {
-    window.open("https://twitter.com/dedpoolcoin", "_blank");
-  };
+// const BuyBotton = () => {
+//   const { t } = useTranslation();
+//   const handleClick = () => {
+//     window.open("https://twitter.com/dedpoolcoin", "_blank");
+//   };
 
-  return (
-    <div>
-      <button className="presale-button" onClick={handleClick}>
-        {/* Buy $DEDPOOL */}
-        <div>
-          <img
-            className="psale-icon"
-            src={psale}
-            alt="psale-icon"
-            onClick={handleClick}
-          />
-        </div>
-      </button>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <button className="presale-button" onClick={handleClick}>
+//         {/* Buy $DEDPOOL */}
+//         <div>
+//           <img
+//             className="psale-icon"
+//             src={psale}
+//             alt="psale-icon"
+//             onClick={handleClick}
+//           />
+//         </div>
+//       </button>
+//     </div>
+//   );
+// };
 
 const PresaleTimer = () => {
   return (

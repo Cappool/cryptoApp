@@ -15,6 +15,7 @@ const zh_CN = {
       caption: " 你不需要成为超级英雄来获得加密货币。",
       caption1: "正确的加密货币会让你展现出英雄本色。",
       whitepaper: "白皮书",
+      audit: "审计",
       featuredIn: "特色报道",
     },
     about: {

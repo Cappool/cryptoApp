@@ -17,6 +17,7 @@ const vi = {
         " Bạn không cần phải là một siêu anh hùng để có được tiền điện tử,",
       caption1: "Tiền điện tử phù hợp sẽ làm cho bạn trở thành anh hùng ",
       whitepaper: "Sách trắng",
+      audit: "Kiểm toán",
       featuredIn: "NỔI BẬT TRONG",
     },
     about: {

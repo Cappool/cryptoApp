@@ -16,6 +16,7 @@ const pl = {
       caption: " Nie musisz być superbohaterem, aby zdobyć kryptowaluty,",
       caption1: "Prawidłowa kryptowaluta wzbudzi w tobie bohatera ",
       whitepaper: "Whitepaper",
+      audit: "Audyt",
       featuredIn: "WYRÓŻNIONE W",
     },
     about: {

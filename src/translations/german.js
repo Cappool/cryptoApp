@@ -17,6 +17,7 @@ const de = {
       caption1:
         "Die richtige Krypto wird den HELDEN in dir zum Vorschein bringen ",
       whitepaper: "Whitepaper",
+      audit: "Audit",
       featuredIn: "VORGESTELLT IN",
     },
     about: {

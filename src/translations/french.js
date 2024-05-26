@@ -17,6 +17,7 @@ const fr = {
         "Vous n'avez pas besoin d'être un super-héros pour obtenir de la crypto,",
       caption1: "La bonne crypto fera ressortir le HÉROS en vous",
       whitepaper: "Livre blanc",
+      audit: "Audit",
       featuredIn: "EN VEDETTE DANS",
     },
     about: {

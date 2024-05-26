@@ -16,6 +16,7 @@ const ko = {
       caption: " 슈퍼히어로가 되지 않아도 암호화폐를 얻을 수 있어요,",
       caption1: "적절한 암호화폐는 당신 안에 있는 영웅을 끌어내 줄 거예요 ",
       whitepaper: "백서",
+      audit: "감사",
       featuredIn: "특집",
     },
     about: {

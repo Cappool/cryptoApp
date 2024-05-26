@@ -16,6 +16,7 @@ const ro = {
       caption: " Nu trebuie să fii un supererou pentru a obține criptomoneda, ",
       caption1: "Criptomoneda potrivită te va face un EROU ",
       whitepaper: "Carte albă",
+      audit: "Audit",
       featuredIn: "PREZENTAT ÎN",
     },
     about: {

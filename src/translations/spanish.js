@@ -16,6 +16,7 @@ const es = {
       caption: " No necesitas ser un superhéroe para obtener la criptomoneda,",
       caption1: "La criptomoneda adecuada sacará al héroe que llevas dentro ",
       whitepaper: "Libro Blanco",
+      audit: "Auditoría",
       featuredIn: "DESTACADO EN",
     },
     about: {

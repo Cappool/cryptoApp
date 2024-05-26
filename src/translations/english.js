@@ -14,6 +14,7 @@ const en = {
       caption: " You don't need to be a superhero to get the crypto,",
       caption1: "The right crypto will bring out the HERO in you ",
       whitepaper: "Whitepaper",
+      audit: "Audit",
       featuredIn: "FEATURED IN",
     },
     about: {

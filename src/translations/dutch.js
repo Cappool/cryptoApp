@@ -16,6 +16,7 @@ const nl = {
       caption: "Je hoeft geen superheld te zijn om de crypto te krijgen,",
       caption1: "De juiste crypto brengt de HELD in jou naar boven ",
       whitepaper: "Whitepaper",
+      audit: "Audit",
       featuredIn: "TE ZIEN IN",
     },
     about: {

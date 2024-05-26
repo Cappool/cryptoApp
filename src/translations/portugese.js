@@ -17,6 +17,7 @@ const pt = {
         " Você não precisa ser um super-herói para conseguir a criptomoeda,",
       caption1: "A criptomoeda certa vai trazer o HERÓI em você ",
       whitepaper: "Whitepaper",
+      audit: "Auditoria",
       featuredIn: "DESTAQUE EM",
     },
     about: {
