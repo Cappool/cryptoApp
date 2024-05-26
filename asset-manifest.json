@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2d51b39.css",
-    "main.js": "/static/js/main.75a780d7.js",
+    "main.css": "/static/css/main.381ab54d.css",
+    "main.js": "/static/js/main.c28d48e8.js",
     "static/js/961.76477c4b.chunk.js": "/static/js/961.76477c4b.chunk.js",
     "static/js/13.ccee7aab.chunk.js": "/static/js/13.ccee7aab.chunk.js",
     "static/js/934.b04dceff.chunk.js": "/static/js/934.b04dceff.chunk.js",
@@ -23,7 +23,6 @@
     "static/media/Logo.png": "/static/media/Logo.05200acf581763a9a822.png",
     "static/media/ded.png": "/static/media/ded.05200acf581763a9a822.png",
     "static/media/headericon.png": "/static/media/headericon.abfda092b7e83a13a7de.png",
-    "static/media/psale.png": "/static/media/psale.80885fe4ccf7c3180a21.png",
     "static/media/roguehero.ttf": "/static/media/roguehero.14168fbf2c68149c123d.ttf",
     "static/media/bnb.png": "/static/media/bnb.97b1de7f752ffb8b2021.png",
     "static/media/wallet_connect.svg": "/static/media/wallet_connect.5225fdcdf508c64928809d95410fb9d7.svg",
@@ -34,7 +33,7 @@
     "static/media/telegram.svg": "/static/media/telegram.4907a7c8baadc09079742f3582dd478c.svg"
   },
   "entrypoints": [
-    "static/css/main.f2d51b39.css",
-    "static/js/main.75a780d7.js"
+    "static/css/main.381ab54d.css",
+    "static/js/main.c28d48e8.js"
   ]
 }
