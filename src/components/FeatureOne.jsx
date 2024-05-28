@@ -23,7 +23,7 @@ const FeatureOne = () => {
           <button className="secondary">
             <span>Start swapping</span>
           </button>
-        </div> */}
+          </div> */}
           <div className="feature-description-title">
             <h2>
               <span className="highlighted">{t("about.q2")}</span>
