@@ -108,8 +108,12 @@ export default function ConnectModal({ coin, amount, value }) {
           <div>
             {t("widget.purchase")}{" "}
             <a
-              href={`https://testnet.bscscan.com/tx/${data?.hash}`}
-              style={{ textDecoration: "underline", color: "blue" }}
+              href={`https://bscscan.com/tx/${data?.hash}`}
+              style={{
+                textDecoration: "underline",
+                color: "blue",
+                lineHeight: "normal",
+              }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -191,8 +195,12 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
         <div>
           {t("widget.purchase")}{" "}
           <a
-            href={`https://testnet.bscscan.com/tx/${data?.hash}`}
-            style={{ textDecoration: "underline", color: "blue" }}
+            href={`https://bscscan.com/tx/${data?.hash}`}
+            style={{
+              textDecoration: "underline",
+              color: "blue",
+              lineHeight: "normal",
+            }}
             target="_blank"
             rel="noopener noreferrer"
           >
