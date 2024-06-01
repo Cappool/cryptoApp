@@ -45,9 +45,9 @@ const Header = () => {
               {t("header.staking")}
             </Link>
           </div>
-          {/* <div className="button-container">
+          <div className="button-container">
             <ButtonUI />
-          </div> */}
+          </div>
           <div className="button-container">
             <LanguageSelector />
           </div>
@@ -95,9 +95,9 @@ const Header = () => {
             <button className="link-button" onClick={toggleExpanded}>
               <Link to="#staking">{t("header.staking")}</Link>
             </button>
-            {/* <div className="button-container">
+            <div className="button-container">
               <ButtonUI />
-            </div> */}
+            </div>
             <div className="button-container">
               <LanguageSelector />
             </div>

@@ -67,8 +67,8 @@ const HeroSection = () => {
         {/* Web3 container */}
         <div className="swap-token">
           <div className="swap-token-container">
-            {/* <Presale /> */}
-            <PresaleTimer />
+            <Presale />
+            {/* <PresaleTimer /> */}
             {/* <p>Presale Launching Soon!</p> */}
           </div>
         </div>

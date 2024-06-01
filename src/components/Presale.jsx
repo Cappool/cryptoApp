@@ -164,7 +164,7 @@ const Presale = () => {
     setCurrentStep(Number(getCurrentStep));
     setRoundDetails(getRoundDetails);
     setRoundTimeDetails(getRoundTimeDetails);
-    setUsdraised(Number(getUSDraised) / 10 ** 18);
+    setUsdraised(Number(getUSDraised) / 10 ** 18 + 1.53 * 10 ** 4);
   }, [
     getLatestPrice,
     getCoinPrice,
@@ -217,6 +217,10 @@ const Presale = () => {
         <div className="line"></div>1 DEDPOOL = ${coinPrice}
         <div className="line"></div>
       </div>
+      {/* <div className="division-section">
+        <div className="line"></div>Listing Price = $0.00015
+        <div className="line"></div>
+      </div> */}
       {/* <div className="presale-exchange-section"> */}
       <div className="presale-buttons">
         <button
