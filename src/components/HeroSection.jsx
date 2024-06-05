@@ -34,6 +34,7 @@ const HeroSection = () => {
                 <p className="hero-info-dedpool">- Dedpool</p>
               </p>
               <img className="home-icon" src={home} alt="home-icon" />
+              {/* <Event /> */}
             </div>
             <div className="white-paper-section">
               <a
@@ -111,12 +112,14 @@ const HeroSection = () => {
 //   );
 // };
 
-const PresaleTimer = () => {
+const Event = () => {
   return (
     <div className="presale">
       <div className="timer">
-        <div className="presale-timer-description">PRESALE STARTS IN</div>
-        <Timer targetTimestamp="1717218000" />
+        <div className="presale-timer-description">
+          $3000 Reward | Top 50 Tweets | Add your tweet links here!
+        </div>
+        {/* <Timer targetTimestamp="1717218000" /> */}
       </div>
     </div>
   );
