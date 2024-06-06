@@ -240,8 +240,8 @@ span.highlighted {
 
 .home-icon {
   margin: 0 5%;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 .home-icon1 {
@@ -1944,6 +1944,10 @@ progress[value]::-moz-progress-bar {
   .button-container {
     padding: 10px 0;
   }
+
+  .events {
+    margin: 4rem 0;
+  }
 }
 
 .bottom-container {
@@ -1964,4 +1968,20 @@ progress[value]::-moz-progress-bar {
 
 .bottom_error {
   padding-top: 20px;
+}
+
+.events {
+  border: solid white 1px;
+  border-radius: 20px;
+  margin: 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.events-container {
+  margin: 5%;
 }
