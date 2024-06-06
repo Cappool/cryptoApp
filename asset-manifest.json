@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c5a89c1.css",
-    "main.js": "/static/js/main.ab1a8f93.js",
+    "main.css": "/static/css/main.2c37d3df.css",
+    "main.js": "/static/js/main.5909f3ac.js",
     "static/js/961.76477c4b.chunk.js": "/static/js/961.76477c4b.chunk.js",
     "static/js/13.ccee7aab.chunk.js": "/static/js/13.ccee7aab.chunk.js",
     "static/js/934.b04dceff.chunk.js": "/static/js/934.b04dceff.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/bg1.png": "/static/media/bg1.418e528161cd4b124e5f.png",
     "static/media/bg2.png": "/static/media/bg2.6f173583716cf83457e0.png",
     "static/media/hero2.png": "/static/media/hero2.bf992ca000c0b71e2099.png",
+    "static/media/home2.png": "/static/media/home2.8f650718429b8b327025.png",
     "static/media/home1.png": "/static/media/home1.bb5d76e8a9ae3e91ca4d.png",
     "static/media/tokenomics1.png": "/static/media/tokenomics1.bd22d51232442fb538c6.png",
     "static/media/TorusNotched-Regular.ttf": "/static/media/TorusNotched-Regular.0421934dc124e68b2237.ttf",
@@ -33,7 +34,7 @@
     "static/media/telegram.svg": "/static/media/telegram.4907a7c8baadc09079742f3582dd478c.svg"
   },
   "entrypoints": [
-    "static/css/main.6c5a89c1.css",
-    "static/js/main.ab1a8f93.js"
+    "static/css/main.2c37d3df.css",
+    "static/js/main.5909f3ac.js"
   ]
 }
