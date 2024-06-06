@@ -233,15 +233,17 @@ span.highlighted {
   /* margin: 30px 0; */
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  /* justify-content: center; */
+  padding-left: 20%;
   gap: 6%;
-  padding-bottom: 10%;
+  padding-bottom: 2%;
 }
 
 .home-icon {
   margin: 0 5%;
   height: 200px;
   width: 200px;
+  margin-right: 35%;
 }
 
 .home-icon1 {
@@ -294,7 +296,7 @@ span.highlighted {
     /* line-height: normal; */
     /* margin: 20px 0; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .hero-section-container
@@ -329,7 +331,7 @@ span.highlighted {
   }
 
   .white-paper-section {
-    /* margin: 30px 0; */
+    margin: 30px 0;
     /* display: flex;
     flex-direction: row; */
     justify-content: center;
@@ -339,8 +341,8 @@ span.highlighted {
 
   .home-icon {
     margin: 0 20%;
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
   }
 
   .home-icon1 {
@@ -410,6 +412,7 @@ span.highlighted {
   line-height: 95px;
   font-family: roqueFont;
   margin-bottom: 0;
+  padding-left: 15%;
   /* font-style: italic; */
 }
 
@@ -1578,6 +1581,8 @@ progress[value]::-moz-progress-bar {
   position: relative;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   .info-img {
@@ -1687,7 +1692,7 @@ progress[value]::-moz-progress-bar {
 
 /* my changes */
 .hero-info-description {
-  width: 50%;
+  width: 75%;
   display: grid;
   justify-content: end;
   /* font-weight: bold; */
@@ -1696,10 +1701,11 @@ progress[value]::-moz-progress-bar {
 }
 
 .hero-info-caption {
-  width: 50%;
+  width: 70%;
   font-weight: bold;
   font-size: large;
   color: #ffcfdb;
+  margin: 0;
 }
 
 .hero-info-caption1 {
@@ -1712,6 +1718,7 @@ progress[value]::-moz-progress-bar {
 .hero-info-dedpool {
   text-align: right;
   font-size: larger;
+  margin: 0;
 }
 
 .image-gallery-container {
@@ -1900,11 +1907,13 @@ progress[value]::-moz-progress-bar {
 
 .hero-two-columns-container {
   display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
   .hero-two-columns-container {
     flex-direction: column;
+    /* padding-bottom: 8%; */
   }
 }
 
@@ -1973,15 +1982,20 @@ progress[value]::-moz-progress-bar {
 .events {
   border: solid white 1px;
   border-radius: 20px;
-  margin: 2rem 2rem;
+  margin: 0 20%;
   background-color: rgba(0, 0, 0, 0.4);
-  font-size: larger;
-  font-weight: bold;
+  /* font-size: larger;
+  font-weight: bold; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-family: torus;
 }
 
-.events-container {
-  margin: 5%;
+.events-title {
+  padding: 0% 10%;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
 }
