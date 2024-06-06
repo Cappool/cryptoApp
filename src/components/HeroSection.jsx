@@ -1,5 +1,5 @@
 // import search from "../assets/icons/search.svg";
-import React from "react";
+import { useState, React } from "react";
 import home from "../assets/home1.png";
 import home2 from "../assets/home2.png";
 // import psale from "../assets/psale.png";
@@ -15,6 +15,7 @@ import Presale from "./Presale";
 // import { ReactComponent as DiscordIcon } from "../assets/icons/discord.svg";
 // import hero from "../assets/hero.svg";
 import { useTranslation } from "react-i18next";
+import Modal from "./Modal.jsx";
 import Timer from "./Timer.jsx";
 
 const HeroSection = () => {
@@ -36,7 +37,7 @@ const HeroSection = () => {
               </p>
               {/* <div className="events"> */}
               {/* <Event /> */}
-              <img className="home-icon" src={home} alt="home-icon" />
+              {/* <img className="home-icon" src={home2} alt="home-icon" /> */}
               {/* </div> */}
             </div>
             <div className="white-paper-section">
@@ -57,6 +58,7 @@ const HeroSection = () => {
                 <button className="white-paper-btn">Audit</button>
               </a>
             </div>
+            {/* <Event /> */}
           </div>
         </div>
 
@@ -114,13 +116,27 @@ const HeroSection = () => {
 //     </div>
 //   );
 // };
-
 const Event = () => {
+  const [showModal1, setShowModal1] = useState(false);
+  const handleOpenModal1 = () => setShowModal1(true);
+  const handleCloseModal1 = () => setShowModal1(false);
+  const { t } = useTranslation();
+
   return (
-    <div className="events-container">
+    <div className="events">
       {/* <div className="timer"> */}
       {/* <div className="presale-timer-description"> */}
-      TOP 50 Tweets share $3000 Reward!
+      {/* <div > */}
+      {/* {" "} */}
+      <h2 className="events-title">
+        {" "}
+        🎊🎁$3000 GIVEAWAY🎁🎊{" "}
+        <button className="info-button" onClick={handleOpenModal1}>
+          ⓘ
+        </button>
+      </h2>
+      {/* </div> */}
+
       <a
         target="_blank"
         rel="noreferrer"
@@ -128,9 +144,22 @@ const Event = () => {
       >
         <button className="white-paper-btn">Add Tweet Link</button>
       </a>
+      <img className="home-icon" src={home2} alt="home-icon" />
       {/* </div> */}
       {/* <Timer targetTimestamp="1717218000" /> */}
       {/* </div> */}
+      {showModal1 && (
+        <Modal handlefn={handleCloseModal1}>
+          🔸 RT, Like & Follow us on Twitter
+          <br></br>
+          🔸 Subscribe to our Telegram
+          <br></br>
+          🔸 Tweet about us in 2 lines & tag us
+          <br></br>
+          <br></br>
+          🎉 TOP 50 tweets will share $3000 in rewards!
+        </Modal>
+      )}
     </div>
   );
 };
