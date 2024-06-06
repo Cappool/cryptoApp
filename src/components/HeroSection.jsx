@@ -1,6 +1,7 @@
 // import search from "../assets/icons/search.svg";
 import React from "react";
 import home from "../assets/home1.png";
+import home2 from "../assets/home2.png";
 // import psale from "../assets/psale.png";
 // import banner from "../assets/banner.png";
 // import f1 from "../assets/f1.png";
@@ -33,8 +34,10 @@ const HeroSection = () => {
                 <p className="hero-info-caption1">{t("home.caption1")} ❞</p>
                 <p className="hero-info-dedpool">- Dedpool</p>
               </p>
-              <img className="home-icon" src={home} alt="home-icon" />
+              {/* <div className="events"> */}
               {/* <Event /> */}
+              <img className="home-icon" src={home} alt="home-icon" />
+              {/* </div> */}
             </div>
             <div className="white-paper-section">
               <a
@@ -114,13 +117,20 @@ const HeroSection = () => {
 
 const Event = () => {
   return (
-    <div className="presale">
-      <div className="timer">
-        <div className="presale-timer-description">
-          $3000 Reward | Top 50 Tweets | Add your tweet links here!
-        </div>
-        {/* <Timer targetTimestamp="1717218000" /> */}
-      </div>
+    <div className="events-container">
+      {/* <div className="timer"> */}
+      {/* <div className="presale-timer-description"> */}
+      TOP 50 Tweets share $3000 Reward!
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://forms.gle/6sSfv3mJymBHdvJk7"
+      >
+        <button className="white-paper-btn">Add Tweet Link</button>
+      </a>
+      {/* </div> */}
+      {/* <Timer targetTimestamp="1717218000" /> */}
+      {/* </div> */}
     </div>
   );
 };
