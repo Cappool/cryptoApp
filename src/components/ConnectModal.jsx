@@ -71,7 +71,7 @@ export default function ConnectModal({ coin, amount, value }) {
       return (
         <BuyWithBNB
           amount={amount}
-          value={value + 0.0001}
+          value={value + 0.00001}
           prepareErrorMsg={prepareErrorMsg}
           errorMsg={errorMsg}
         />
