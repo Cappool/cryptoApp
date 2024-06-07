@@ -58,7 +58,7 @@ const HeroSection = () => {
                 <button className="white-paper-btn">Audit</button>
               </a>
             </div>
-            {/* <Event /> */}
+            <Event />
           </div>
         </div>
 
@@ -154,7 +154,7 @@ const Event = () => {
           <br></br>
           🔸 Subscribe to our Telegram
           <br></br>
-          🔸 Tweet about us in 2 lines & tag us
+          🔸 Tweet about $DEDPOOL in a line & tag us
           <br></br>
           <br></br>
           🎉 TOP 50 tweets will share $3000 in rewards!
