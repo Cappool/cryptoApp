@@ -58,7 +58,7 @@ const HeroSection = () => {
                 <button className="white-paper-btn">Audit</button>
               </a>
             </div>
-            <Event />
+            {/* <Event /> */}
           </div>
         </div>
 
