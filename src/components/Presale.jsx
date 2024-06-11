@@ -164,7 +164,7 @@ const Presale = () => {
     setCurrentStep(Number(getCurrentStep));
     setRoundDetails(getRoundDetails);
     setRoundTimeDetails(getRoundTimeDetails);
-    setUsdraised(Number(getUSDraised) / 10 ** 18 + 6.405642 * 10 ** 4);
+    setUsdraised(Number(getUSDraised) / 10 ** 18 + 6.740564 * 10 ** 4);
   }, [
     getLatestPrice,
     getCoinPrice,
@@ -178,7 +178,8 @@ const Presale = () => {
     <div className="presale">
       <div className="timer">
         <div className="timer-description">{t("widget.time")}</div>
-        <Timer targetTimestamp={Number(roundTimeDetails[currentStep])} />
+        {/* <Timer targetTimestamp={Number(roundTimeDetails[currentStep])} /> */}
+        <Timer targetTimestamp="1718883000" />
       </div>
       <div className="progress-container">
         <progress
