@@ -164,7 +164,7 @@ const Presale = () => {
     setCurrentStep(Number(getCurrentStep));
     setRoundDetails(getRoundDetails);
     setRoundTimeDetails(getRoundTimeDetails);
-    setUsdraised(Number(getUSDraised) / 10 ** 18 + 9.429631 * 10 ** 4);
+    setUsdraised(Number(getUSDraised) / 10 ** 18 + 9.742963 * 10 ** 4);
   }, [
     getLatestPrice,
     getCoinPrice,
