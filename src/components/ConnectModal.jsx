@@ -63,7 +63,7 @@ export default function ConnectModal({ coin, amount, value }) {
   };
 
   useEffect(() => {
-    if (amount >= 10870) setisAL(false);
+    if (amount >= 10600) setisAL(false);
   }, [amount]);
 
   if (isConnected) {
@@ -97,7 +97,7 @@ export default function ConnectModal({ coin, amount, value }) {
           className="btn btn-connect"
           disabled={!write}
           onClick={() => {
-            if (amount < 10870) {
+            if (amount < 10600) {
               setisAL(true);
             } else write?.();
           }}
@@ -161,7 +161,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
   });
 
   useEffect(() => {
-    if (amount >= 11000) setisAL(false);
+    if (amount >= 10600) setisAL(false);
   }, [amount]);
 
   return (
@@ -184,7 +184,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
         className="btn btn-connect"
         disabled={!write}
         onClick={() => {
-          if (amount < 11000) {
+          if (amount < 10600) {
             setisAL(true);
           } else write?.();
         }}
