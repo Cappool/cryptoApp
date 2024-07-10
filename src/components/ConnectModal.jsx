@@ -63,7 +63,7 @@ export default function ConnectModal({ coin, amount, value }) {
   };
 
   useEffect(() => {
-    if (amount >= 10500) setisAL(false);
+    if (amount >= 10410) setisAL(false);
   }, [amount]);
 
   if (isConnected) {
@@ -97,7 +97,7 @@ export default function ConnectModal({ coin, amount, value }) {
           className="btn btn-connect"
           disabled={!write}
           onClick={() => {
-            if (amount < 10500) {
+            if (amount < 10410) {
               setisAL(true);
             } else write?.();
           }}
@@ -161,7 +161,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
   });
 
   useEffect(() => {
-    if (amount >= 10500) setisAL(false);
+    if (amount >= 10410) setisAL(false);
   }, [amount]);
 
   return (
@@ -176,7 +176,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
       {isAL && (
         <div className="errormsg-container">
           <a style={{ color: "red" }}>
-            {prepareErrorMsg("Minimum Purchase amount is 11000 $DEDPOOL")}
+            {prepareErrorMsg("Minimum Purchase amount is $1")}
           </a>
         </div>
       )}
@@ -184,7 +184,7 @@ const BuyWithBNB = ({ amount, value, prepareErrorMsg, errorMsg }) => {
         className="btn btn-connect"
         disabled={!write}
         onClick={() => {
-          if (amount < 10500) {
+          if (amount < 10410) {
             setisAL(true);
           } else write?.();
         }}
