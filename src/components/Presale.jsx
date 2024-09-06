@@ -179,7 +179,7 @@ const Presale = () => {
       <div className="timer">
         <div className="timer-description">{t("widget.time")}</div>
         {/* <Timer targetTimestamp={Number(roundTimeDetails[currentStep])} /> */}
-        <Timer targetTimestamp="1725497363" />
+        <Timer targetTimestamp="1726800455" />
       </div>
       <div className="progress-container">
         <progress
